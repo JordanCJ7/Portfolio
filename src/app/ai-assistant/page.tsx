@@ -12,7 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { Sparkles, Loader2 } from 'lucide-react';
+import { Sparkles, Loader2, ShieldAlert } from 'lucide-react';
 import AnimatedElement from '@/components/animated-element';
 
 const refineSchema = z.object({
@@ -47,11 +47,33 @@ export default function AIAssistantPage() {
       });
     } catch (error) {
       console.error("Error refining description:", error);
-      toast({
-        title: "Error",
-        description: "Failed to refine content. Please try again.",
-        variant: "destructive",
-      });
+      let errorMessage = "Failed to refine content. Please try again.";
+      let errorTitle = "Error";
+
+      if (error instanceof Error) {
+        if (error.message.includes("Rate limit exceeded") || error.message.includes("Daily request limit exceeded")) {
+          errorMessage = error.message;
+          errorTitle = "Usage Limit Reached";
+           toast({
+            title: errorTitle,
+            description: errorMessage,
+            variant: "destructive",
+            icon: <ShieldAlert className="h-5 w-5" />, // Icon will inherit color from destructive variant
+          });
+        } else {
+           toast({
+            title: errorTitle,
+            description: errorMessage,
+            variant: "destructive",
+          });
+        }
+      } else {
+        toast({
+          title: "Error",
+          description: "An unknown error occurred.",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsLoading(false);
     }
@@ -60,7 +82,7 @@ export default function AIAssistantPage() {
   return (
     <SectionWrapper
       title="AI Copywriting Assistant"
-      subtitle="Elevate your writing with AI. Refine descriptions, enhance clarity, and achieve the perfect tone for your content."
+      subtitle="Elevate your writing with AI. Refine descriptions, enhance clarity, and achieve the perfect tone for your content. Usage limits apply to ensure fair use within free tier."
     >
       <AnimatedElement>
         <Card className="max-w-2xl mx-auto shadow-xl">
@@ -71,6 +93,7 @@ export default function AIAssistantPage() {
             </CardTitle>
             <CardDescription>
               Enter your text and desired tone, and let our AI assistant help you craft compelling content.
+              Note: API usage is rate-limited to help stay within free tier boundaries. You can configure these limits in the .env file.
             </CardDescription>
           </CardHeader>
           <Form {...form}>

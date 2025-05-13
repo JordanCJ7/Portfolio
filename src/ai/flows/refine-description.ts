@@ -10,6 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { rateLimiterService } from '@/services/rate-limiter';
 
 const RefineDescriptionInputSchema = z.object({
   description: z.string().describe('The project description to refine.'),
@@ -23,6 +24,13 @@ const RefineDescriptionOutputSchema = z.object({
 export type RefineDescriptionOutput = z.infer<typeof RefineDescriptionOutputSchema>;
 
 export async function refineDescription(input: RefineDescriptionInput): Promise<RefineDescriptionOutput> {
+  // Check rate limit before calling the flow
+  // Using global limit for now as there's no user authentication system
+  const rateLimitCheck = await rateLimiterService.checkRateLimit(); 
+  if (!rateLimitCheck.allowed) {
+    // Throw an error that can be caught by the client-side form handler
+    throw new Error(rateLimitCheck.message);
+  }
   return refineDescriptionFlow(input);
 }
 
@@ -40,6 +48,7 @@ const refineDescriptionFlow = ai.defineFlow(
     outputSchema: RefineDescriptionOutputSchema,
   },
   async input => {
+    // The rate limit check is performed in the exported wrapper function `refineDescription`
     const {output} = await prompt(input);
     return output!;
   }
