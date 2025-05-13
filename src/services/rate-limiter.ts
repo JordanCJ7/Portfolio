@@ -1,5 +1,4 @@
 // src/services/rate-limiter.ts
-'use server';
 
 // In-memory store for request timestamps. For a production app, use a persistent store like Redis.
 const requestTimestampsPerUser = new Map<string, number[]>(); // Stores epoch ms for each request
