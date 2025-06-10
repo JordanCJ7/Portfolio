@@ -149,8 +149,8 @@ export default function ContactPage() {
                 Feel free to reach out via email or phone.
               </p>
               <ul className="mt-3 space-y-2 text-sm">
-                <li><a href="mailto:your.email@example.com" className="hover:text-primary transition-colors">your.email@example.com</a></li>
-                <li><a href="tel:+1234567890" className="hover:text-primary transition-colors">+1 (234) 567-890</a></li>
+                <li><a href="mailto:janithagamage2001@example.com" className="hover:text-primary transition-colors">janithagamage2001@example.com</a></li>
+                <li><a href="tel:+94743288572" className="hover:text-primary transition-colors">+94 743 288 572</a></li>
               </ul>
             </div>
             <div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                 <MapPin className="mr-3 h-5 w-5" /> My Location
               </h3>
               <p className="text-muted-foreground">
-                Currently based in [Your City, Your Country].<br />
+                Currently based in Colombo, Sri Lanka.<br />
                 Open to remote opportunities worldwide.
               </p>
             </div>
