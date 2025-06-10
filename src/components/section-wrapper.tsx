@@ -5,7 +5,7 @@ interface SectionWrapperProps {
   id?: string;
   className?: string;
   title?: string;
-  subtitle?: string;
+  subtitle?: string | ReactNode;
   children: ReactNode;
   titleClassName?: string;
   subtitleClassName?: string;
