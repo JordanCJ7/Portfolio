@@ -45,12 +45,17 @@ export default function ContactPage() {
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
     form.reset();
-  };
-
+  };  
+  
   return (
     <SectionWrapper
       title="Get In Touch"
-      subtitle="Have a project in mind, a question, or just want to say hi? Feel free to reach out. I'm always open to discussing new opportunities and collaborations."
+      subtitle={
+        <>
+          Have a project in mind, a question, or just want to say hi? Feel free to reach out. <br />
+          I'm always open to discussing new opportunities and collaborations.
+        </>
+      }
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <AnimatedElement>
