@@ -18,16 +18,16 @@ import {
 const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform with advanced product filtering and a streamlined checkout process.',
-    imageUrl: 'https://picsum.photos/seed/project1/600/338',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-    categories: ['Web Development', 'E-commerce'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2023,
-    client: 'Tech Solutions Inc.',
-    role: 'Lead Developer'
+    title: 'NobleTrust Insurance Website',
+    description: 'A fully responsive static website for NobleTrust Insurance, showcasing insurance services with a modern, user-friendly interface and smooth page transitions.',
+    imageUrl: 'https://picsum.photos/seed/nobletrust/600/338', // You can replace this with the actual image URL or company logo
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'Node.js'],
+    categories: ['Web Development', 'Corporate Website'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',  // Actual deployed site URL
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',  // Actual GitHub repo
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Lead Frontend Developer'
   },
   {
     id: '2',
