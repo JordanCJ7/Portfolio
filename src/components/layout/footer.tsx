@@ -1,5 +1,5 @@
 // @/components/layout/footer.tsx
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -19,18 +19,10 @@ export default function Footer() {
             <Twitter className="h-6 w-6" />
             </Link>
             <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-primary transition-colors">
-            {/* Replace with a Facebook icon from lucide-react or another icon library */}
-            <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-            </svg>
+            <Facebook className="h-6 w-6" />
             </Link>
             <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors">
-            {/* Replace with an Instagram icon from lucide-react or another icon library */}
-            <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <rect x="2" y="2" width="20" height="20" rx="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
-            </svg>
+            <Instagram className="h-6 w-6" />
             </Link>
         </div>
         <p>&copy; {currentYear} Portfolio Pro. All rights reserved.</p>
