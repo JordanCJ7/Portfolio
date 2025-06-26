@@ -1,6 +1,6 @@
-# Portfolio Pro: Modern Next.js Portfolio with AI
+# Janitha Gamage Portfolio: Modern Next.js Portfolio with AI
 
-Portfolio Pro is a sleek, modern, and AI-enhanced personal portfolio website template. Built with Next.js 15 (App Router), Tailwind CSS, ShadCN UI, and Genkit for AI-powered copywriting assistance. It's designed to help developers and creatives showcase their work, skills, and personality in a professional and engaging way.
+Janitha Gamage Portfolio is a sleek, modern, and AI-enhanced personal portfolio website template. Built with Next.js 15 (App Router), Tailwind CSS, ShadCN UI, and Genkit for AI-powered copywriting assistance. It's designed to help developers and creatives showcase their work, skills, and personality in a professional and engaging way.
 
 ## Project Overview
 
@@ -146,7 +146,7 @@ Follow these steps to get the project up and running on your local machine:
 6.  **Open in Browser:**
     Open your web browser and navigate to `http://localhost:9002` (or the port specified in your terminal).
 
-You should now have the Portfolio Pro application running locally.
+You should now have the Janitha Gamage Portfolio application running locally.
 
 ## Building for Production
 
