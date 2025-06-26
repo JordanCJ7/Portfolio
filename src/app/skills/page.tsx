@@ -15,7 +15,9 @@ import {
   Smartphone, 
   Palette,
   BarChart3,
-  Lightbulb
+  Lightbulb,
+  Bot,
+  Brain
 } from 'lucide-react';
 
 interface SkillCategory {
@@ -29,6 +31,18 @@ interface SkillCategory {
 }
 
 const skillCategories: SkillCategory[] = [
+  {
+    title: 'AI-Driven Development',
+    icon: <Bot className="h-6 w-6" />,
+    skills: [
+      { name: 'GitHub Copilot', level: 88, description: 'Advanced AI-assisted coding and productivity enhancement' },
+      { name: 'AI Code Generation', level: 82, description: 'Leveraging AI tools for efficient development workflows' },
+      { name: 'Machine Learning Integration', level: 70, description: 'Implementing AI features in applications' },
+      { name: 'AI-Enhanced Debugging', level: 75, description: 'Using AI tools for code optimization and error detection' },
+      { name: 'Prompt Engineering', level: 80, description: 'Effective AI tool interaction and optimization' },
+      { name: 'AI Development Workflows', level: 85, description: 'Integrating AI tools into development processes' }
+    ]
+  },
   {
     title: 'Product Management & Strategy',
     icon: <Target className="h-6 w-6" />,
@@ -109,7 +123,7 @@ export default function SkillsPage() {
   return (
     <SectionWrapper
       title="Skills & Expertise"
-      subtitle="Advanced technical and leadership skills developed through university projects, team leadership, and hands-on development. Specialized in JavaScript/TypeScript, React, Node.js, cloud technologies, and project management."
+      subtitle="Advanced technical and leadership skills with a focus on AI-driven development. Specialized in leveraging AI tools like GitHub Copilot to enhance productivity, code quality, and development efficiency."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {skillCategories.map((category, categoryIndex) => (
@@ -169,6 +183,7 @@ export default function SkillsPage() {
                 <h4 className="font-semibold text-foreground">Current & Upcoming Certifications</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
                   <li>• <strong>Microsoft Azure Fundamentals AZ-900</strong> (Scheduled Next Month - Fully Prepared)</li>
+                  <li>• <strong>GitHub Copilot Proficiency</strong> (Advanced AI-assisted development)</li>
                   <li>• Postman API Fundamentals Student Expert</li>
                   <li>• Microsoft Azure Fundamentals (Current)</li>
                   <li>• GitHub Collaboration with Markdown</li>
@@ -176,14 +191,16 @@ export default function SkillsPage() {
                 </ul>
               </div>
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Leadership & Internship Readiness</h4>
+                <h4 className="font-semibold text-foreground">AI-Enhanced Development & Internship Readiness</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
+                  <li>• Expert proficiency in GitHub Copilot and AI development tools</li>
+                  <li>• AI-enhanced productivity in coding and debugging workflows</li>
                   <li>• Proven team leadership across multiple university projects</li>
                   <li>• Experience with project management tools and methodologies</li>
-                  <li>• Track record of on-time project delivery</li>
+                  <li>• Track record of on-time project delivery with AI-enhanced efficiency</li>
                   <li>• Strong mentoring and problem-solving capabilities</li>
                   <li>• Excellent team coordination and communication skills</li>
-                  <li>• Ready to lead or contribute effectively in professional settings</li>
+                  <li>• Ready to lead or contribute effectively in professional settings and AI-forward development environments</li>
                 </ul>
               </div>
             </div>
