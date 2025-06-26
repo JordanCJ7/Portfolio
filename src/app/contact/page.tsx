@@ -49,11 +49,11 @@ export default function ContactPage() {
   
   return (
     <SectionWrapper
-      title="Let's Build Something Great Together"
+      title="Let's Connect - Open for Internships"
       subtitle={
         <>
-          Whether you need a developer who thinks like a product manager, or a product strategist who can code, I'm here to help. <br />
-          Let's discuss how we can turn your ideas into impactful digital solutions.
+          I'm actively seeking internship opportunities where I can contribute as a developer, product contributor, or both. <br />
+          Let's discuss how I can add value to your team while learning and growing professionally.
         </>
       }
     >
@@ -173,7 +173,7 @@ export default function ContactPage() {
                 Availability
               </h3>
               <p className="text-muted-foreground">
-                Currently available for product development roles, technical product management positions, and development projects. Ready to lead cross-functional teams and deliver user-centered solutions.
+                Currently seeking internship opportunities in software development, product management, or technical product roles. Ready to contribute to innovative projects and learn from experienced professionals.
               </p>
             </div>
           </div>
