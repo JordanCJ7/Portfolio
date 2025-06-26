@@ -30,9 +30,11 @@ export default function HomePage() {
               </Link>
             </Button>
           </div>
-           <Button variant="link" size="lg" className="text-primary hover:text-primary/80 p-0 h-auto mt-2">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume (PDF)
+           <Button asChild variant="link" size="lg" className="text-primary hover:text-primary/80 p-0 h-auto mt-2">
+              <a href="/resume.pdf" download="Janitha_Gamage_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume (PDF)
+              </a>
             </Button>
         </AnimatedElement>
 
