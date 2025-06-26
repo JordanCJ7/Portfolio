@@ -10,8 +10,8 @@ export default function HomePage() {
     <SectionWrapper className="!py-0 md:!py-0 lg:!py-0 min-h-[calc(100vh-10rem)] flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <AnimatedElement className="space-y-6 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-foreground">
-            Hello, I&apos;m Your Name
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-foreground leading-tight pb-3">
+            Hello, I&apos;m Janitha Gamage
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
             A passionate and creative Full Stack Developer with expertise in building modern, responsive, and user-friendly web applications. I thrive on transforming complex ideas into elegant digital solutions.
