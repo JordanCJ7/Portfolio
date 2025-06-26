@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/in/janithagamage/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
             <Linkedin className="h-6 w-6" />
             </Link>
-            <Link href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-primary transition-colors">
+            <Link href="https://x.com/JanithaGamage01" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-primary transition-colors">
             <Twitter className="h-6 w-6" />
             </Link>
             <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-primary transition-colors">
