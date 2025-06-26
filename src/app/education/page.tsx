@@ -4,6 +4,7 @@ import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import AnimatedElement from '@/components/animated-element';
+import Image from 'next/image';
 import { 
   GraduationCap, 
   Award, 
@@ -107,58 +108,102 @@ export default function EducationPage() {
                 {/* University Education */}
                 <div className="border-l-4 border-primary/30 pl-6 pb-4">
                   <div className="flex items-start justify-between">
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Bachelor of Software Engineering
-                      </h3>
-                      <p className="text-muted-foreground font-medium">
-                        Sri Lanka Institute of Information Technology (SLIIT)
-                      </p>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Specializing in AI-driven development, full-stack technologies, and product management methodologies
-                      </p>
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {/* <Badge variant="secondary" className="text-xs">
-                          Current GPA: [Your GPA]
-                        </Badge> */}
-                        <Badge variant="outline" className="text-xs">
-                          Expected Graduation: 2026
-                        </Badge>
+                    <div className="flex gap-4 items-center">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-primary/20 bg-white p-2 relative">
+                          <Image
+                            src="/logos/sliit-logo.png"
+                            alt="SLIIT Logo"
+                            width={128}
+                            height={128}
+                            className="w-full h-full object-contain"
+                            onError={(e) => {
+                              // Hide the image and show fallback
+                              e.currentTarget.style.display = 'none';
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-primary/10 rounded flex items-center justify-center text-primary font-bold text-sm">
+                            SLIIT
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground">
+                          Bachelor of Software Engineering
+                        </h3>
+                        <p className="text-muted-foreground font-medium">
+                          Sri Lanka Institute of Information Technology (SLIIT)
+                        </p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Specializing in AI-driven development, full-stack technologies, and product management methodologies
+                        </p>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {/* <Badge variant="secondary" className="text-xs">
+                            Current GPA: [Your GPA]
+                          </Badge> */}
+                        </div>
                       </div>
                     </div>
-                    <Badge variant="outline" className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      Current
-                    </Badge>
+                    <div className="flex flex-col gap-2 items-end text-right">
+                      <Badge variant="outline" className="flex items-center gap-1 w-fit">
+                        <Calendar className="h-3 w-3" />
+                        Current
+                      </Badge>
+                      <Badge variant="outline" className="text-xs w-fit">
+                        Expected Graduation: 2026
+                      </Badge>
+                    </div>
                   </div>
                 </div>
 
                 {/* High School Education */}
                 <div className="border-l-4 border-accent/30 pl-6 pb-4">
                   <div className="flex items-start justify-between">
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Richmond College, Galle
-                      </h3>
-                      <p className="text-muted-foreground font-medium">
-                        Advanced Level Education - Biological Science Stream
-                      </p>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Focus on Biological Science, Physics, and Chemistry
-                      </p>
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {/* <Badge variant="secondary" className="text-xs">
-                          Final Grade: [Your Grade/Percentage]
-                        </Badge> */}
-                        <Badge variant="outline" className="text-xs">
-                          Graduation Year: 2020
-                        </Badge>
+                    <div className="flex gap-4 items-center">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-accent/20 bg-white p-2 relative">
+                          <Image
+                            src="/logos/richmond-college-logo.png"
+                            alt="Richmond College Logo"
+                            width={128}
+                            height={128}
+                            className="w-full h-full object-contain"
+                            onError={(e) => {
+                              // Hide the image and show fallback
+                              e.currentTarget.style.display = 'none';
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-accent/10 rounded flex items-center justify-center text-accent font-bold text-xs">
+                            RC
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground">
+                          Richmond College, Galle
+                        </h3>
+                        <p className="text-muted-foreground font-medium">
+                          Advanced Level Education - Biological Science Stream
+                        </p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Focus on Biological Science, Physics, and Chemistry
+                        </p>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {/* <Badge variant="secondary" className="text-xs">
+                            Final Grade: [Your Grade/Percentage]
+                          </Badge> */}
+                        </div>
                       </div>
                     </div>
-                    <Badge variant="outline" className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      Completed
-                    </Badge>
+                    <div className="flex flex-col gap-2 items-end text-right">
+                      <Badge variant="outline" className="flex items-center gap-1 w-fit">
+                        <Calendar className="h-3 w-3" />
+                        Completed
+                      </Badge>
+                      <Badge variant="outline" className="text-xs w-fit">
+                        Graduation Year: 2020
+                      </Badge>
+                    </div>
                   </div>
                 </div>
 
