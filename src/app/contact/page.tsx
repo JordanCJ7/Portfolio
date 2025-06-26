@@ -49,11 +49,11 @@ export default function ContactPage() {
   
   return (
     <SectionWrapper
-      title="Get In Touch"
+      title="Let's Build Something Great Together"
       subtitle={
         <>
-          Have a project in mind, a question, or just want to say hi? Feel free to reach out. <br />
-          I'm always open to discussing new opportunities and collaborations.
+          Whether you need a developer who thinks like a product manager, or a product strategist who can code, I'm here to help. <br />
+          Let's discuss how we can turn your ideas into impactful digital solutions.
         </>
       }
     >
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 Send Me a Message
               </CardTitle>
               <CardDescription>
-                Fill out the form below and I&apos;ll respond as soon as possible.
+                Looking for technical development, product strategy, or both? Let me know how I can help bring your vision to life.
               </CardDescription>
             </CardHeader>
             <Form {...form}>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                 Availability
               </h3>
               <p className="text-muted-foreground">
-                I am currently available for freelance projects and full-time positions. Let&apos;s discuss how I can contribute to your team.
+                Currently available for product development roles, technical product management positions, and development projects. Ready to lead cross-functional teams and deliver user-centered solutions.
               </p>
             </div>
           </div>
