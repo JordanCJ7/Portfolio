@@ -36,18 +36,18 @@ const sampleProjects: Project[] = [
   },
   {
     id: '2', 
-    title: 'FoodieFly - Food Delivery Platform',
-    description: 'Led a university team to architect and deliver a cloud-native microservices platform. Managed project timeline using PM tools, coordinated team members, and conducted user experience optimization research to improve order completion rates and delivery efficiency.',
+    title: 'FoodieFly - Microservices Food Delivery Platform',
+    description: 'Led a university team to architect and deliver a sophisticated cloud-native microservices platform using Docker containerization. Managed project timeline using PM tools, coordinated team members, and implemented scalable architecture with container orchestration for optimal performance.',
     imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
-    tags: ['Microservices', 'Cloud Architecture', 'Team Leadership', 'Project Management', 'User Experience'],
+    tags: ['Microservices', 'Docker', 'Cloud Architecture', 'Team Leadership', 'Container Orchestration'],
     categories: ['Product Management', 'System Design'],
     projectUrl: '#',
     repoUrl: '#',
     year: 2025,
     client: 'SLIIT Academic Project',
-    role: 'Team Lead & Technical Product Manager',
+    role: 'Team Lead & System Architect',
     metrics: {
-      performance: '99.9% uptime achieved',
+      performance: '99.9% uptime with containerized services',
       userExperience: '85% user satisfaction score',
       delivery: 'Delivered 2 weeks ahead of schedule'
     }
@@ -122,6 +122,42 @@ const sampleProjects: Project[] = [
       retention: '65% improvement in Day-1 retention',
       completion: '78% onboarding completion rate',
       satisfaction: '4.6/5 user satisfaction score'
+    }
+  },
+  {
+    id: '7',
+    title: 'Advanced Tic Tac Toe AI Game',
+    description: 'Developed a sophisticated Tic Tac Toe game with advanced AI logic using C# and .NET. Implemented multiple difficulty levels, strategic AI decision-making algorithms, and an intuitive user interface showcasing strong programming fundamentals.',
+    imageUrl: 'https://picsum.photos/seed/tictactoe/600/338',
+    tags: ['C#', '.NET', 'AI Logic', 'Game Development', 'Algorithm Design'],
+    categories: ['AI/ML', 'Web Development'],
+    projectUrl: '#',
+    repoUrl: '#',
+    year: 2024,
+    client: 'Personal Project',
+    role: 'Solo Developer',
+    metrics: {
+      complexity: 'Advanced AI with multiple difficulty levels',
+      performance: 'Optimized decision-making algorithms',
+      satisfaction: 'Engaging user experience with strategic gameplay'
+    }
+  },
+  {
+    id: '8',
+    title: 'Kotlin Todo Mobile App',
+    description: 'Built a feature-rich todo application using Kotlin to demonstrate mobile development fundamentals. Includes task management, local storage, intuitive UI/UX design, and efficient data handling showcasing mobile development capabilities.',
+    imageUrl: 'https://picsum.photos/seed/todoapp/600/338',
+    tags: ['Kotlin', 'Android Development', 'Mobile UI/UX', 'Local Storage'],
+    categories: ['Mobile App', 'UX Strategy'],
+    projectUrl: '#',
+    repoUrl: '#',
+    year: 2024,
+    client: 'Learning Project',
+    role: 'Mobile Developer',
+    metrics: {
+      functionality: 'Complete CRUD operations',
+      performance: 'Smooth mobile experience',
+      learning: 'Kotlin fundamentals mastery'
     }
   }
 ];
