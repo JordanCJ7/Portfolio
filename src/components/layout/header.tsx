@@ -50,7 +50,7 @@ export default function Header() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 text-lg font-semibold">
             <CodeXml className="h-7 w-7 text-primary" />
-            <span>Portfolio Pro</span>
+            <span>Janitha Gamage</span>
           </Link>
           <div className="h-8 w-8 bg-muted rounded-md animate-pulse sm:hidden"></div>
           <nav className="hidden sm:flex items-center space-x-2">
@@ -70,7 +70,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 text-lg font-semibold">
           <CodeXml className="h-7 w-7 text-primary" />
-          <span className="tracking-tight">Portfolio Pro</span>
+          <span className="tracking-tight">Janitha Gamage</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -94,7 +94,7 @@ export default function Header() {
                 <div className="flex justify-between items-center mb-4">
                    <Link href="/" className="flex items-center space-x-2 text-lg font-semibold" onClick={() => setIsMobileMenuOpen(false)}>
                     <CodeXml className="h-7 w-7 text-primary" />
-                    <span>Portfolio Pro</span>
+                    <span>Janitha Gamage</span>
                   </Link>
                   <SheetClose asChild>
                      <Button variant="ghost" size="icon">
