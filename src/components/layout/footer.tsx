@@ -25,7 +25,7 @@ export default function Footer() {
             <Instagram className="h-6 w-6" />
             </Link>
         </div>
-        <p>&copy; {currentYear} Portfolio Pro. All rights reserved.</p>
+        <p>&copy; {currentYear} Janitha Gamage. All rights reserved.</p>
         <p>Built with Next.js and Tailwind CSS.</p>
       </div>
     </footer>
