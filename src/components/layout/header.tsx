@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { CodeXml, Home, Layers, Mail, Sparkles, Menu, X } from 'lucide-react';
+import { CodeXml, Home, Layers, Mail, Sparkles, Menu, X, Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -12,6 +12,7 @@ import { useState, useEffect } from 'react';
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
   { href: '/projects', label: 'Projects', icon: Layers },
+  { href: '/skills', label: 'Skills', icon: Brain },
   { href: '/ai-assistant', label: 'AI Assistant', icon: Sparkles },
   { href: '/contact', label: 'Contact', icon: Mail },
 ];
