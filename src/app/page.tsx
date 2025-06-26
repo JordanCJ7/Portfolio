@@ -14,7 +14,7 @@ export default function HomePage() {
             Hello, I&apos;m Janitha Gamage
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
-            A passionate and creative Full Stack Developer with expertise in building modern, responsive, and user-friendly web applications. I thrive on transforming complex ideas into elegant digital solutions.
+            A passionate Developer & Emerging Product Strategist with expertise in full-stack development, API testing, and user experience design. I bridge the gap between technical implementation and user needs, transforming complex ideas into elegant digital solutions that serve real users at scale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
