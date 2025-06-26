@@ -4,7 +4,7 @@ import type { Project } from '@/types';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowUpRight, Github } from 'lucide-react';
+import { ArrowUpRight, Github, TrendingUp, Users, Zap } from 'lucide-react';
 import AnimatedElement from './animated-element';
 
 interface ProjectCardProps {
@@ -34,9 +34,30 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           <CardTitle className="text-xl lg:text-2xl font-semibold mb-2 text-foreground">
             {project.title}
           </CardTitle>
+          {project.role && (
+            <p className="text-sm text-primary font-medium mb-2">{project.role}</p>
+          )}
           <CardDescription className="text-muted-foreground mb-4 line-clamp-3">
             {project.description}
           </CardDescription>
+          
+          {/* Product Metrics */}
+          {project.metrics && (
+            <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+              <p className="text-xs font-semibold text-muted-foreground mb-2 flex items-center">
+                <TrendingUp className="mr-1 h-3 w-3" />
+                Impact & Results
+              </p>
+              <div className="space-y-1">
+                {Object.entries(project.metrics).slice(0, 2).map(([key, value]) => (
+                  <p key={key} className="text-xs text-foreground">
+                    <span className="font-medium">•</span> {value}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+          
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.slice(0, 4).map((tag) => (
               <Badge key={tag} variant="secondary" className="text-xs font-medium">
