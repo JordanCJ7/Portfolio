@@ -14,7 +14,7 @@ export default function HomePage() {
             Hello, I&apos;m Janitha Gamage
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
-            A passionate Developer & Emerging Product Strategist who bridges technical excellence with user-centered design. With proven experience managing products for 2M+ users, I combine full-stack development expertise with data-driven product strategy, user research, and cross-functional team leadership to deliver measurable business impact and exceptional user experiences.
+            A passionate Computer Science student and emerging Developer & Product Strategist seeking internship opportunities. As a proven team leader across multiple university projects, I've successfully managed diverse teams, utilized PM tools for efficient project delivery, and guided teammates through challenging situations. Through this leadership experience and collaborative development, I've gained hands-on experience managing products for 2M+ users, combining technical skills in full-stack development with product strategy, user research, and cross-functional team management.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
