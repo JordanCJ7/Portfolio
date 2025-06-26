@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio Pro - Your Name',
+  title: 'Janitha Gamage - Full Stack Developer',
   description: 'A modern portfolio showcasing professional work and skills.',
 };
 
