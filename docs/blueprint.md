@@ -1,4 +1,4 @@
-# **App Name**: Portfolio Pro
+# **App Name**: Janitha Gamage Portfolio
 
 ## Core Features:
 
