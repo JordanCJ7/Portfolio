@@ -36,10 +36,10 @@ const skillCategories: SkillCategory[] = [
       { name: 'Product Strategy', level: 72, description: 'Applied in leading university project teams' },
       { name: 'User Research', level: 75, description: 'Led user interview sessions and analysis' },
       { name: 'Data Analysis', level: 70, description: 'KPI tracking and team performance metrics' },
-      { name: 'Agile/Scrum', level: 82, description: 'Led sprint planning and team coordination' },
-      { name: 'Stakeholder Management', level: 78, description: 'Managed client communication and expectations' },
-      { name: 'Requirements Gathering', level: 80, description: 'Led requirement sessions with teams and clients' },
-      { name: 'Product Roadmapping', level: 68, description: 'Planned feature delivery timelines' },
+      { name: 'Agile/Scrum', level: 70, description: 'Led sprint planning and team coordination' },
+      { name: 'Stakeholder Management', level: 80, description: 'Managed client communication and expectations' },
+      { name: 'Requirements Gathering', level: 75, description: 'Led requirement sessions with teams and clients' },
+      { name: 'Product Roadmapping', level: 72, description: 'Planned feature delivery timelines' },
       { name: 'Team Organization', level: 85, description: 'Utilized PM tools for efficient project delivery' }
     ]
   },
@@ -47,23 +47,26 @@ const skillCategories: SkillCategory[] = [
     title: 'Development & Engineering',
     icon: <Code2 className="h-6 w-6" />,
     skills: [
-      { name: 'JavaScript/TypeScript', level: 80, description: 'Strong foundation with modern frameworks' },
-      { name: 'React/Next.js', level: 75, description: 'Building responsive web applications' },
-      { name: 'Node.js/Express', level: 70, description: 'Backend development and API creation' },
-      { name: 'Python', level: 65, description: 'Backend development and scripting' },
+      { name: 'JavaScript/TypeScript', level: 85, description: 'Advanced proficiency with modern frameworks and ES6+' },
+      { name: 'React/Next.js', level: 82, description: 'Building complex responsive web applications' },
+      { name: 'Node.js/Express', level: 80, description: 'Backend development, APIs, and microservices' },
+      { name: 'C# / .NET', level: 65, description: 'Fundamentals with advanced logic implementation' },
+      { name: 'Kotlin', level: 60, description: 'Mobile app development fundamentals' },
+      { name: 'Python', level: 75, description: 'Backend development and scripting' },
       { name: 'PHP', level: 60, description: 'Web applications and basic CMS' },
-      { name: 'MongoDB/MySQL', level: 72, description: 'Database design and queries' }
+      { name: 'MongoDB/MySQL', level: 75, description: 'Database design and queries' }
     ]
   },
   {
-    title: 'API & DevOps',
+    title: 'Cloud & DevOps',
     icon: <GitBranch className="h-6 w-6" />,
     skills: [
       { name: 'API Design & Testing', level: 82, description: 'RESTful APIs and Postman expertise' },
       { name: 'Git/GitHub', level: 85, description: 'Version control and team collaboration' },
-      { name: 'Microsoft Azure', level: 65, description: 'Basic cloud deployment and services' },
-      { name: 'CI/CD Pipelines', level: 55, description: 'Learning automated deployment' },
-      { name: 'Docker', level: 50, description: 'Basic containerization concepts' }
+      { name: 'Microsoft Azure', level: 80, description: 'AZ-900 certified level, cloud deployment and services' },
+      { name: 'Docker & Containerization', level: 75, description: 'Microservices deployment for food delivery system' },
+      { name: 'Microservices Architecture', level: 72, description: 'Designed and implemented complex food delivery platform' },
+      { name: 'CI/CD Pipelines', level: 58, description: 'Learning automated deployment workflows' }
     ]
   },
   {
@@ -106,7 +109,7 @@ export default function SkillsPage() {
   return (
     <SectionWrapper
       title="Skills & Expertise"
-      subtitle="Technical and product skills developed through university projects, collaborative team work, and hands-on experience. Eager to apply and expand these capabilities in an internship setting."
+      subtitle="Advanced technical and leadership skills developed through university projects, team leadership, and hands-on development. Specialized in JavaScript/TypeScript, React, Node.js, cloud technologies, and project management."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {skillCategories.map((category, categoryIndex) => (
@@ -163,10 +166,11 @@ export default function SkillsPage() {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Current Certifications</h4>
+                <h4 className="font-semibold text-foreground">Current & Upcoming Certifications</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
+                  <li>• <strong>Microsoft Azure Fundamentals AZ-900</strong> (Scheduled Next Month - Fully Prepared)</li>
                   <li>• Postman API Fundamentals Student Expert</li>
-                  <li>• Microsoft Azure Fundamentals</li>
+                  <li>• Microsoft Azure Fundamentals (Current)</li>
                   <li>• GitHub Collaboration with Markdown</li>
                   <li>• AI Skills Fest Challenge Completion</li>
                 </ul>
