@@ -112,17 +112,17 @@ export default function EducationPage() {
                         Bachelor of Software Engineering
                       </h3>
                       <p className="text-muted-foreground font-medium">
-                        [Your University Name]
+                        Sri Lanka Institute of Information Technology (SLIIT)
                       </p>
                       <p className="text-sm text-muted-foreground mt-1">
                         Specializing in AI-driven development, full-stack technologies, and product management methodologies
                       </p>
                       <div className="mt-2 flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="text-xs">
+                        {/* <Badge variant="secondary" className="text-xs">
                           Current GPA: [Your GPA]
-                        </Badge>
+                        </Badge> */}
                         <Badge variant="outline" className="text-xs">
-                          Expected Graduation: [Year]
+                          Expected Graduation: 2026
                         </Badge>
                       </div>
                     </div>
@@ -138,20 +138,20 @@ export default function EducationPage() {
                   <div className="flex items-start justify-between">
                     <div>
                       <h3 className="text-lg font-semibold text-foreground">
-                        [Your High School Name]
+                        Richmond College, Galle
                       </h3>
                       <p className="text-muted-foreground font-medium">
-                        High School Diploma
+                        Advanced Level Education - Biological Science Stream
                       </p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Focus on Mathematics, Science, and Technology subjects
+                        Focus on Biological Science, Physics, and Chemistry
                       </p>
                       <div className="mt-2 flex flex-wrap gap-2">
-                        <Badge variant="secondary" className="text-xs">
+                        {/* <Badge variant="secondary" className="text-xs">
                           Final Grade: [Your Grade/Percentage]
-                        </Badge>
+                        </Badge> */}
                         <Badge variant="outline" className="text-xs">
-                          Graduation Year: [Year]
+                          Graduation Year: 2020
                         </Badge>
                       </div>
                     </div>
