@@ -103,7 +103,8 @@ export default function EducationPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
+              <div className="space-y-6">
+                {/* University Education */}
                 <div className="border-l-4 border-primary/30 pl-6 pb-4">
                   <div className="flex items-start justify-between">
                     <div>
@@ -111,16 +112,75 @@ export default function EducationPage() {
                         Bachelor of Software Engineering
                       </h3>
                       <p className="text-muted-foreground font-medium">
-                        Undergraduate Student
+                        [Your University Name]
                       </p>
                       <p className="text-sm text-muted-foreground mt-1">
                         Specializing in AI-driven development, full-stack technologies, and product management methodologies
                       </p>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        <Badge variant="secondary" className="text-xs">
+                          Current GPA: [Your GPA]
+                        </Badge>
+                        <Badge variant="outline" className="text-xs">
+                          Expected Graduation: [Year]
+                        </Badge>
+                      </div>
                     </div>
                     <Badge variant="outline" className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
                       Current
                     </Badge>
+                  </div>
+                </div>
+
+                {/* High School Education */}
+                <div className="border-l-4 border-accent/30 pl-6 pb-4">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        [Your High School Name]
+                      </h3>
+                      <p className="text-muted-foreground font-medium">
+                        High School Diploma
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Focus on Mathematics, Science, and Technology subjects
+                      </p>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        <Badge variant="secondary" className="text-xs">
+                          Final Grade: [Your Grade/Percentage]
+                        </Badge>
+                        <Badge variant="outline" className="text-xs">
+                          Graduation Year: [Year]
+                        </Badge>
+                      </div>
+                    </div>
+                    <Badge variant="outline" className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      Completed
+                    </Badge>
+                  </div>
+                </div>
+
+                {/* Test Scores & Academic Achievements */}
+                <div className="bg-muted/30 rounded-lg p-4">
+                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <Award className="h-4 w-4" />
+                    Test Scores & Academic Achievements
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="text-center p-3 bg-background rounded border">
+                      <p className="text-xs text-muted-foreground">GIT</p>
+                      <p className="font-semibold text-foreground">A</p>
+                    </div>
+                    <div className="text-center p-3 bg-background rounded border">
+                      <p className="text-xs text-muted-foreground">GIQ</p>
+                      <p className="font-semibold text-foreground">86.66</p>
+                    </div>
+                    <div className="text-center p-3 bg-background rounded border">
+                      <p className="text-xs text-muted-foreground">General English</p>
+                      <p className="font-semibold text-foreground">A</p>
+                    </div>
                   </div>
                 </div>
               </div>
