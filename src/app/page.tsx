@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import SectionWrapper from '@/components/section-wrapper';
 import AnimatedElement from '@/components/animated-element';
-import { ArrowRight, Download, Briefcase, Award, Code, Cloud, Target } from 'lucide-react';
+import { ArrowRight, Download, Briefcase, Award, Code, Cloud, Target, Bot } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -18,7 +18,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
-            A passionate Software Engineering Undergraduate and emerging Developer & Product Strategist seeking internship opportunities. Specializing in <strong>JavaScript/TypeScript, React, Node.js</strong>, and <strong>cloud technologies (Azure)</strong>, I've successfully led multiple university project teams using microservices architecture and containerization. Currently preparing for <strong>Microsoft Azure AZ-900 certification</strong> while managing products serving 2M+ users, combining advanced technical skills with proven leadership and product strategy expertise.
+            A passionate Software Engineering Undergraduate and emerging Developer & Product Strategist seeking internship opportunities. Specializing in <strong>AI-driven development, JavaScript/TypeScript, React, Node.js</strong>, and <strong>cloud technologies (Azure)</strong>, I leverage AI tools like GitHub Copilot to enhance development efficiency and code quality. I've successfully led multiple university project teams using microservices architecture and modern AI-assisted development practices, while managing products serving 2M+ users.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
@@ -51,6 +51,10 @@ export default function HomePage() {
             <div className="mt-8 space-y-4">
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
+                  <Bot className="h-3 w-3" />
+                  AI-Driven Development
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
                   <Cloud className="h-3 w-3" />
                   Azure & Docker
                 </Badge>
@@ -64,7 +68,7 @@ export default function HomePage() {
                 </Badge>
               </div>
               <p className="text-sm text-muted-foreground text-center md:text-left">
-                <strong>Currently Available for Internships</strong> • Full-Stack Development • Product Management
+                <strong>Currently Available for Internships</strong> • Full-Stack Development • Product/Project Management
               </p>
             </div>
         </AnimatedElement>
