@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="border-t border-border/40 bg-background/95 py-8">
       <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
         <div className="flex justify-center space-x-6 mb-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
+            <Link href="" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
             <Github className="h-6 w-6" />
             </Link>
             <Link href="https://www.linkedin.com/in/janithagamage/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
