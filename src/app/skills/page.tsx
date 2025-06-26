@@ -30,73 +30,74 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: 'Product Management',
+    title: 'Product Management & Strategy',
     icon: <Target className="h-6 w-6" />,
     skills: [
-      { name: 'Product Strategy', level: 85, description: 'Roadmap planning and vision setting' },
-      { name: 'User Research', level: 80, description: 'User interviews and behavior analysis' },
-      { name: 'Data Analysis', level: 75, description: 'KPI definition and metrics tracking' },
-      { name: 'Agile/Scrum', level: 90, description: 'Sprint planning and team coordination' },
-      { name: 'Stakeholder Management', level: 85, description: 'Cross-functional communication' },
-      { name: 'Requirements Gathering', level: 88, description: 'Technical and business requirements' },
-      { name: 'Product Roadmapping', level: 82, description: 'Feature prioritization and planning' },
-      { name: 'Market Research', level: 78, description: 'Competitive analysis and positioning' }
+      { name: 'Product Strategy', level: 72, description: 'Applied in leading university project teams' },
+      { name: 'User Research', level: 75, description: 'Led user interview sessions and analysis' },
+      { name: 'Data Analysis', level: 70, description: 'KPI tracking and team performance metrics' },
+      { name: 'Agile/Scrum', level: 82, description: 'Led sprint planning and team coordination' },
+      { name: 'Stakeholder Management', level: 78, description: 'Managed client communication and expectations' },
+      { name: 'Requirements Gathering', level: 80, description: 'Led requirement sessions with teams and clients' },
+      { name: 'Product Roadmapping', level: 68, description: 'Planned feature delivery timelines' },
+      { name: 'Team Organization', level: 85, description: 'Utilized PM tools for efficient project delivery' }
     ]
   },
   {
     title: 'Development & Engineering',
     icon: <Code2 className="h-6 w-6" />,
     skills: [
-      { name: 'JavaScript/TypeScript', level: 90, description: 'Modern ES6+ and type safety' },
-      { name: 'React/Next.js', level: 85, description: 'Component architecture and SSR' },
-      { name: 'Node.js/Express', level: 80, description: 'API development and microservices' },
-      { name: 'Python', level: 75, description: 'Backend development and automation' },
-      { name: 'PHP', level: 70, description: 'Web applications and CMS development' },
-      { name: 'MongoDB/MySQL', level: 78, description: 'Database design and optimization' }
+      { name: 'JavaScript/TypeScript', level: 80, description: 'Strong foundation with modern frameworks' },
+      { name: 'React/Next.js', level: 75, description: 'Building responsive web applications' },
+      { name: 'Node.js/Express', level: 70, description: 'Backend development and API creation' },
+      { name: 'Python', level: 65, description: 'Backend development and scripting' },
+      { name: 'PHP', level: 60, description: 'Web applications and basic CMS' },
+      { name: 'MongoDB/MySQL', level: 72, description: 'Database design and queries' }
     ]
   },
   {
     title: 'API & DevOps',
     icon: <GitBranch className="h-6 w-6" />,
     skills: [
-      { name: 'API Design & Testing', level: 88, description: 'RESTful APIs and Postman expertise' },
-      { name: 'Git/GitHub', level: 90, description: 'Version control and collaboration' },
-      { name: 'Microsoft Azure', level: 75, description: 'Cloud deployment and services' },
-      { name: 'CI/CD Pipelines', level: 70, description: 'Automated testing and deployment' },
-      { name: 'Docker', level: 65, description: 'Containerization and orchestration' }
+      { name: 'API Design & Testing', level: 82, description: 'RESTful APIs and Postman expertise' },
+      { name: 'Git/GitHub', level: 85, description: 'Version control and team collaboration' },
+      { name: 'Microsoft Azure', level: 65, description: 'Basic cloud deployment and services' },
+      { name: 'CI/CD Pipelines', level: 55, description: 'Learning automated deployment' },
+      { name: 'Docker', level: 50, description: 'Basic containerization concepts' }
     ]
   },
   {
     title: 'UX & Design Strategy',
     icon: <Palette className="h-6 w-6" />,
     skills: [
-      { name: 'User Experience Design', level: 80, description: 'User journey and wireframing' },
-      { name: 'Accessibility (WCAG)', level: 85, description: 'Inclusive design principles' },
-      { name: 'A/B Testing', level: 75, description: 'Conversion optimization' },
-      { name: 'Design Systems', level: 70, description: 'Component libraries and consistency' },
-      { name: 'Responsive Design', level: 88, description: 'Mobile-first development' }
+      { name: 'User Experience Design', level: 68, description: 'Basic user journey and wireframing' },
+      { name: 'Accessibility (WCAG)', level: 70, description: 'Understanding inclusive design' },
+      { name: 'A/B Testing', level: 60, description: 'Basic conversion optimization' },
+      { name: 'Design Systems', level: 58, description: 'Component consistency concepts' },
+      { name: 'Responsive Design', level: 78, description: 'Mobile-first development approach' }
     ]
   },
   {
     title: 'Data & Analytics',
     icon: <BarChart3 className="h-6 w-6" />,
     skills: [
-      { name: 'Analytics Implementation', level: 75, description: 'User behavior tracking' },
-      { name: 'KPI Definition', level: 80, description: 'Success metrics and OKRs' },
-      { name: 'User Feedback Analysis', level: 85, description: 'Qualitative data insights' },
-      { name: 'Performance Monitoring', level: 78, description: 'Application health metrics' },
-      { name: 'Conversion Optimization', level: 82, description: 'Funnel analysis and improvement' }
+      { name: 'Analytics Implementation', level: 62, description: 'Basic user behavior tracking' },
+      { name: 'KPI Definition', level: 65, description: 'Understanding success metrics' },
+      { name: 'User Feedback Analysis', level: 70, description: 'Processing user insights' },
+      { name: 'Performance Monitoring', level: 60, description: 'Basic application metrics' },
+      { name: 'Conversion Optimization', level: 58, description: 'Learning funnel analysis' }
     ]
   },
   {
-    title: 'Leadership & Collaboration',
+    title: 'Leadership & Team Management',
     icon: <Users className="h-6 w-6" />,
     skills: [
-      { name: 'Cross-functional Leadership', level: 85, description: 'Team coordination and mentoring' },
-      { name: 'Technical Communication', level: 90, description: 'Documentation and knowledge sharing' },
-      { name: 'Project Management', level: 88, description: 'Timeline and resource planning' },
-      { name: 'Public Speaking', level: 75, description: 'Presentations and stakeholder updates' },
-      { name: 'Conflict Resolution', level: 80, description: 'Team dynamics and problem solving' }
+      { name: 'Team Leadership', level: 82, description: 'Led multiple university project teams successfully' },
+      { name: 'Project Management', level: 80, description: 'Used PM tools for on-time delivery' },
+      { name: 'Technical Communication', level: 85, description: 'Clear documentation and team guidance' },
+      { name: 'Problem-Solving Leadership', level: 78, description: 'Guided teammates through challenging situations' },
+      { name: 'Cross-functional Collaboration', level: 80, description: 'Coordinated diverse team members effectively' },
+      { name: 'Mentoring & Guidance', level: 75, description: 'Supported team members through difficulties' }
     ]
   }
 ];
@@ -105,7 +106,7 @@ export default function SkillsPage() {
   return (
     <SectionWrapper
       title="Skills & Expertise"
-      subtitle="A comprehensive overview of my technical and product management capabilities, developed through hands-on experience with 2M+ users and diverse project portfolios."
+      subtitle="Technical and product skills developed through university projects, collaborative team work, and hands-on experience. Eager to apply and expand these capabilities in an internship setting."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {skillCategories.map((category, categoryIndex) => (
@@ -171,14 +172,14 @@ export default function SkillsPage() {
                 </ul>
               </div>
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Continuous Learning</h4>
+                <h4 className="font-semibold text-foreground">Leadership & Internship Readiness</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Product Management Methodologies</li>
-                  <li>• Advanced React Patterns</li>
-                  <li>• Cloud Architecture Design</li>
-                  <li>• User Research Techniques</li>
-                  <li>• Product Analytics & Growth Metrics</li>
-                  <li>• Design Thinking & Customer Journey Mapping</li>
+                  <li>• Proven team leadership across multiple university projects</li>
+                  <li>• Experience with project management tools and methodologies</li>
+                  <li>• Track record of on-time project delivery</li>
+                  <li>• Strong mentoring and problem-solving capabilities</li>
+                  <li>• Excellent team coordination and communication skills</li>
+                  <li>• Ready to lead or contribute effectively in professional settings</li>
                 </ul>
               </div>
             </div>
