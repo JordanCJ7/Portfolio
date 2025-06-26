@@ -1,0 +1,254 @@
+"use client";
+
+import SectionWrapper from '@/components/section-wrapper';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import AnimatedElement from '@/components/animated-element';
+import { 
+  GraduationCap, 
+  Award, 
+  BookOpen, 
+  Calendar,
+  ExternalLink,
+  CheckCircle,
+  Clock,
+  Bot,
+  Users
+} from 'lucide-react';
+
+const certifications = [
+  {
+    name: "Microsoft Azure Fundamentals AZ-900",
+    status: "scheduled",
+    description: "Scheduled Next Month - Fully Prepared",
+    provider: "Microsoft",
+    date: "July 2025",
+    icon: <Award className="h-4 w-4" />,
+    color: "bg-blue-500/10 text-blue-500"
+  },
+  {
+    name: "GitHub Copilot Proficiency",
+    status: "completed",
+    description: "Advanced AI-assisted development",
+    provider: "GitHub",
+    date: "2025",
+    icon: <Bot className="h-4 w-4" />,
+    color: "bg-green-500/10 text-green-500"
+  },
+  {
+    name: "Postman API Fundamentals Student Expert",
+    status: "completed",
+    description: "API design, testing, and documentation",
+    provider: "Postman",
+    date: "2024",
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-orange-500/10 text-orange-500"
+  },
+  {
+    name: "Microsoft Azure Fundamentals",
+    status: "in-progress",
+    description: "Cloud computing fundamentals",
+    provider: "Microsoft",
+    date: "In Progress",
+    icon: <Clock className="h-4 w-4" />,
+    color: "bg-yellow-500/10 text-yellow-500"
+  },
+  {
+    name: "GitHub Collaboration with Markdown",
+    status: "completed",
+    description: "Version control and documentation",
+    provider: "GitHub",
+    date: "2024",
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-green-500/10 text-green-500"
+  },
+  {
+    name: "AI Skills Fest Challenge",
+    status: "completed",
+    description: "AI development and integration challenges",
+    provider: "Various",
+    date: "2024",
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-purple-500/10 text-purple-500"
+  }
+];
+
+const readinessSkills = [
+  "Expert proficiency in GitHub Copilot and AI development tools",
+  "AI-enhanced productivity in coding and debugging workflows",
+  "Proven team leadership across multiple university projects",
+  "Experience with project management tools and methodologies",
+  "Track record of on-time project delivery with AI-enhanced efficiency",
+  "Strong mentoring and problem-solving capabilities",
+  "Excellent team coordination and communication skills",
+  "Ready to lead or contribute effectively in professional settings and AI-forward development environments"
+];
+
+export default function EducationPage() {
+  return (
+    <SectionWrapper
+      title="Education & Certifications"
+      subtitle="Academic background, professional certifications, and continuous learning journey in technology and AI-driven development."
+    >
+      <div className="space-y-8">
+        {/* Education Section */}
+        <AnimatedElement animationClass="animate-fade-in-up" delay="delay-100">
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                  <GraduationCap className="h-6 w-6" />
+                </div>
+                Academic Background
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="border-l-4 border-primary/30 pl-6 pb-4">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Bachelor of Software Engineering
+                      </h3>
+                      <p className="text-muted-foreground font-medium">
+                        Undergraduate Student
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Specializing in AI-driven development, full-stack technologies, and product management methodologies
+                      </p>
+                    </div>
+                    <Badge variant="outline" className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      Current
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </AnimatedElement>
+
+        {/* Certifications Section */}
+        <AnimatedElement animationClass="animate-fade-in-up" delay="delay-200">
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <div className="p-2 rounded-lg bg-accent/10 text-accent">
+                  <Award className="h-6 w-6" />
+                </div>
+                Professional Certifications
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {certifications.map((cert, index) => (
+                  <div key={cert.name} className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow">
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className={`p-1.5 rounded ${cert.color}`}>
+                          {cert.icon}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-sm text-foreground">
+                            {cert.name}
+                          </h4>
+                          <p className="text-xs text-muted-foreground">
+                            {cert.provider}
+                          </p>
+                        </div>
+                      </div>
+                      <Badge 
+                        variant={cert.status === 'completed' ? 'default' : cert.status === 'scheduled' ? 'secondary' : 'outline'}
+                        className="text-xs"
+                      >
+                        {cert.date}
+                      </Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {cert.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </AnimatedElement>
+
+        {/* AI-Enhanced Development & Internship Readiness */}
+        <AnimatedElement animationClass="animate-fade-in-up" delay="delay-300">
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <div className="p-2 rounded-lg bg-green-500/10 text-green-500">
+                  <Users className="h-6 w-6" />
+                </div>
+                AI-Enhanced Development & Internship Readiness
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  {readinessSkills.slice(0, 4).map((skill, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm text-muted-foreground">{skill}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="space-y-3">
+                  {readinessSkills.slice(4).map((skill, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm text-muted-foreground">{skill}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </AnimatedElement>
+
+        {/* Continuous Learning */}
+        <AnimatedElement animationClass="animate-fade-in-up" delay="delay-400">
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-xl">
+                <div className="p-2 rounded-lg bg-blue-500/10 text-blue-500">
+                  <BookOpen className="h-6 w-6" />
+                </div>
+                Continuous Learning & Development
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="text-center p-4 border rounded-lg">
+                    <Bot className="h-8 w-8 text-primary mx-auto mb-2" />
+                    <h4 className="font-semibold text-sm">AI & Development</h4>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Staying current with AI tools and development practices
+                    </p>
+                  </div>
+                  <div className="text-center p-4 border rounded-lg">
+                    <Award className="h-8 w-8 text-accent mx-auto mb-2" />
+                    <h4 className="font-semibold text-sm">Cloud Technologies</h4>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Advancing Azure and cloud architecture knowledge
+                    </p>
+                  </div>
+                  <div className="text-center p-4 border rounded-lg">
+                    <Users className="h-8 w-8 text-green-500 mx-auto mb-2" />
+                    <h4 className="font-semibold text-sm">Leadership Skills</h4>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Enhancing team management and project leadership
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </AnimatedElement>
+      </div>
+    </SectionWrapper>
+  );
+}

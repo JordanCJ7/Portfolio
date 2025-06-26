@@ -8,16 +8,11 @@ import AnimatedElement from '@/components/animated-element';
 import { 
   Code2, 
   Users, 
-  TrendingUp, 
   Target, 
   GitBranch, 
-  Database, 
-  Smartphone, 
   Palette,
   BarChart3,
-  Lightbulb,
-  Bot,
-  Brain
+  Bot
 } from 'lucide-react';
 
 interface SkillCategory {
@@ -165,48 +160,6 @@ export default function SkillsPage() {
           </AnimatedElement>
         ))}
       </div>
-      
-      {/* Additional certifications section */}
-      <AnimatedElement animationClass="animate-fade-in" delay="delay-600" className="mt-12">
-        <Card className="shadow-lg">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-xl">
-              <div className="p-2 rounded-lg bg-accent/10 text-accent">
-                <Lightbulb className="h-6 w-6" />
-              </div>
-              Certifications & Learning
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Current & Upcoming Certifications</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• <strong>Microsoft Azure Fundamentals AZ-900</strong> (Scheduled Next Month - Fully Prepared)</li>
-                  <li>• <strong>GitHub Copilot Proficiency</strong> (Advanced AI-assisted development)</li>
-                  <li>• Postman API Fundamentals Student Expert</li>
-                  <li>• Microsoft Azure Fundamentals (Current)</li>
-                  <li>• GitHub Collaboration with Markdown</li>
-                  <li>• AI Skills Fest Challenge Completion</li>
-                </ul>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">AI-Enhanced Development & Internship Readiness</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Expert proficiency in GitHub Copilot and AI development tools</li>
-                  <li>• AI-enhanced productivity in coding and debugging workflows</li>
-                  <li>• Proven team leadership across multiple university projects</li>
-                  <li>• Experience with project management tools and methodologies</li>
-                  <li>• Track record of on-time project delivery with AI-enhanced efficiency</li>
-                  <li>• Strong mentoring and problem-solving capabilities</li>
-                  <li>• Excellent team coordination and communication skills</li>
-                  <li>• Ready to lead or contribute effectively in professional settings and AI-forward development environments</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </AnimatedElement>
     </SectionWrapper>
   );
 }
