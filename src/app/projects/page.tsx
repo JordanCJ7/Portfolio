@@ -18,63 +18,123 @@ import {
 const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'NobleTrust Insurance Website',
-    description: 'A fully responsive static website for NobleTrust Insurance, showcasing insurance services with a modern, user-friendly interface and smooth page transitions.',
-    imageUrl: 'https://picsum.photos/seed/nobletrust/600/338', // You can replace this with the actual image URL or company logo
-    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'Node.js'],
-    categories: ['Web Development', 'Corporate Website'],
-    projectUrl: 'https://jordancj7.github.io/NobleTrust/',  // Actual deployed site URL
-    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',  // Actual GitHub repo
-    year: 2025,
-    client: 'NobleTrust Insurance',
-    role: 'Lead Frontend Developer'
+    title: 'Flashboard Knowledge Base',
+    description: 'Led product strategy and development for a comprehensive knowledge base serving 2M+ mobile keyboard users. Improved user onboarding and reduced support tickets by 40% through data-driven content strategy.',
+    imageUrl: 'https://picsum.photos/seed/flashboard/600/338',
+    tags: ['Next.js', 'TypeScript', 'Product Strategy', 'User Research', 'Content Strategy'],
+    categories: ['Product Management', 'Web Development'],
+    projectUrl: '#',
+    repoUrl: '#',
+    year: 2024,
+    client: 'Flashboard Mobile',
+    role: 'Product Developer & Strategist',
+    metrics: {
+      users: '2M+ active users',
+      improvement: '40% reduction in support tickets',
+      engagement: '65% increase in self-service resolution'
+    }
   },
   {
-    id: '2',
-    title: 'AI Content Generator',
-    description: 'A SaaS application leveraging AI to generate marketing copy and blog posts for businesses.',
-    imageUrl: 'https://picsum.photos/seed/project2/600/338',
-    tags: ['Next.js', 'Python', 'FastAPI', 'OpenAI API', 'Prisma'],
-    categories: ['Web Development', 'AI/ML'],
+    id: '2', 
+    title: 'FoodieFly - Food Delivery Platform',
+    description: 'Architected and delivered a cloud-native microservices platform with focus on user experience optimization. Conducted user research to improve order completion rates and delivery efficiency.',
+    imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
+    tags: ['Microservices', 'Cloud Architecture', 'User Experience', 'Agile', 'Stakeholder Management'],
+    categories: ['Product Management', 'System Design'],
     projectUrl: '#',
-    year: 2024,
-    client: 'Creative AI Co.',
-    role: 'Full Stack Developer'
+    repoUrl: '#',
+    year: 2025,
+    client: 'SLIIT Academic Project',
+    role: 'Technical Product Manager',
+    metrics: {
+      performance: '99.9% uptime achieved',
+      userExperience: '85% user satisfaction score',
+      delivery: 'Delivered 2 weeks ahead of schedule'
+    }
   },
   {
     id: '3',
-    title: 'Mobile Fitness Tracker',
-    description: 'A cross-platform mobile app for tracking workouts, setting goals, and connecting with friends.',
-    imageUrl: 'https://picsum.photos/seed/project3/600/338',
-    tags: ['React Native', 'Firebase', 'GraphQL', 'TypeScript'],
-    categories: ['Mobile App', 'Fitness'],
+    title: 'Salon Pabalu Management System',
+    description: 'Led cross-functional team to design and develop a comprehensive salon management solution. Managed stakeholder requirements, conducted user interviews, and implemented data-driven features that increased operational efficiency.',
+    imageUrl: 'https://picsum.photos/seed/salon/600/338',
+    tags: ['MERN Stack', 'Requirements Gathering', 'User Interviews', 'Process Optimization'],
+    categories: ['Product Management', 'Web Development'],
+    projectUrl: '#',
     repoUrl: '#',
-    year: 2022,
-    client: 'FitLife Apps',
-    role: 'Mobile Developer'
+    year: 2024,
+    client: 'Salon Pabalu',
+    role: 'Product Owner & Developer',
+    metrics: {
+      efficiency: '30% improvement in booking efficiency',
+      revenue: '25% increase in customer retention',
+      automation: 'Automated 80% of manual processes'
+    }
   },
   {
     id: '4',
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing complex datasets, helping businesses make informed decisions.',
-    imageUrl: 'https://picsum.photos/seed/project4/600/338',
-    tags: ['D3.js', 'React', 'Redux', 'Express.js'],
-    categories: ['Web Development', 'Data Science'],
-    projectUrl: '#',
-    year: 2023,
-    client: 'Insightful Data Corp',
-    role: 'Frontend Developer'
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    imageUrl: 'https://picsum.photos/seed/nobletrust/600/338',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
   },
+  {
+    id: '5',
+    title: 'E-Commerce Product Analytics Dashboard',
+    description: 'Built a comprehensive analytics dashboard to track user behavior and product performance. Led user research sessions, defined KPIs, and implemented data-driven features that increased conversion rates and improved inventory management decisions.',
+    imageUrl: 'https://picsum.photos/seed/analytics/600/338',
+    tags: ['React', 'D3.js', 'Product Analytics', 'User Research', 'KPI Tracking', 'Data Visualization'],
+    categories: ['Product Management', 'Data Science', 'Web Development'],
+    projectUrl: '#',
+    repoUrl: '#',
+    year: 2024,
+    client: 'E-Commerce Startup',
+    role: 'Product Analyst & Frontend Developer',
+    metrics: {
+      conversion: '32% increase in conversion rate',
+      efficiency: '50% faster inventory decisions',
+      insights: '15+ actionable user insights identified'
+    }
+  },
+  {
+    id: '6',
+    title: 'Mobile App User Onboarding Optimization',
+    description: 'Redesigned user onboarding flow for a fintech mobile app through extensive user research and A/B testing. Collaborated with design and engineering teams to implement data-driven improvements that significantly reduced user drop-off rates.',
+    imageUrl: 'https://picsum.photos/seed/onboarding/600/338',
+    tags: ['User Research', 'A/B Testing', 'Mobile UX', 'Product Strategy', 'Cross-functional Leadership'],
+    categories: ['Product Management', 'UX Strategy', 'Mobile App'],
+    projectUrl: '#',
+    repoUrl: '#',
+    year: 2024,
+    client: 'FinTech Startup',
+    role: 'Product Manager',
+    metrics: {
+      retention: '65% improvement in Day-1 retention',
+      completion: '78% onboarding completion rate',
+      satisfaction: '4.6/5 user satisfaction score'
+    }
+  }
 ];
 
 const allCategories: Category[] = [
   { id: 'all', name: 'All Categories' },
+  { id: 'Product Management', name: 'Product Management' },
   { id: 'Web Development', name: 'Web Development' },
+  { id: 'System Design', name: 'System Design' },
+  { id: 'UX Strategy', name: 'UX Strategy' },
   { id: 'Mobile App', name: 'Mobile App' },
   { id: 'AI/ML', name: 'AI/ML' },
-  { id: 'E-commerce', name: 'E-commerce' },
   { id: 'Data Science', name: 'Data Science' },
-  { id: 'Fitness', name: 'Fitness' },
 ];
 
 export default function ProjectsPage() {
