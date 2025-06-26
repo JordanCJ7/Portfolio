@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import SectionWrapper from '@/components/section-wrapper';
 import AnimatedElement from '@/components/animated-element';
-import { ArrowRight, Download, Briefcase } from 'lucide-react';
+import { ArrowRight, Download, Briefcase, Award, Code, Cloud, Target } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -12,15 +13,24 @@ export default function HomePage() {
         <AnimatedElement className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-foreground leading-tight pb-3">
             Hello, I&apos;m Janitha Gamage
+            <span className="block text-2xl sm:text-3xl md:text-4xl mt-2 text-muted-foreground font-normal">
+              Emerging Developer & Product Strategist
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
-            A passionate Computer Science student and emerging Developer & Product Strategist seeking internship opportunities. As a proven team leader across multiple university projects, I've successfully managed diverse teams, utilized PM tools for efficient project delivery, and guided teammates through challenging situations. Through this leadership experience and collaborative development, I've gained hands-on experience managing products for 2M+ users, combining technical skills in full-stack development with product strategy, user research, and cross-functional team management.
+            A passionate Software Engineering Undergraduate and emerging Developer & Product Strategist seeking internship opportunities. Specializing in <strong>JavaScript/TypeScript, React, Node.js</strong>, and <strong>cloud technologies (Azure)</strong>, I've successfully led multiple university project teams using microservices architecture and containerization. Currently preparing for <strong>Microsoft Azure AZ-900 certification</strong> while managing products serving 2M+ users, combining advanced technical skills with proven leadership and product strategy expertise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
               <Link href="/projects">
                 <Briefcase className="mr-2 h-5 w-5" />
                 View My Work
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="shadow-sm hover:shadow-accent/30 transition-shadow">
+              <Link href="/skills">
+                <Target className="mr-2 h-5 w-5" />
+                Skills & Expertise
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="shadow-sm hover:shadow-accent/30 transition-shadow">
@@ -36,6 +46,27 @@ export default function HomePage() {
                 Download Resume (PDF)
               </a>
             </Button>
+            
+            {/* Skills Preview */}
+            <div className="mt-8 space-y-4">
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
+                  <Cloud className="h-3 w-3" />
+                  Azure & Docker
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
+                  <Award className="h-3 w-3" />
+                  AZ-900 Ready
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-1 py-1 px-3">
+                  <Award className="h-3 w-3" />
+                  Postman Student Expert
+                </Badge>
+              </div>
+              <p className="text-sm text-muted-foreground text-center md:text-left">
+                <strong>Currently Available for Internships</strong> • Full-Stack Development • Product Management
+              </p>
+            </div>
         </AnimatedElement>
 
         <AnimatedElement animationClass="animate-fade-in" delay="delay-200" className="relative group">
