@@ -110,19 +110,20 @@ export default function EducationPage() {
                   <div className="flex items-start justify-between">
                     <div className="flex gap-4 items-center">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-primary/20 bg-white p-2 relative">
+                        <div className="w-24 h-24 rounded-lg overflow-hidden border-2 border-primary/20 p-0 relative">
                           <Image
                             src="/logos/sliit-logo.png"
                             alt="SLIIT Logo"
-                            width={128}
-                            height={128}
+                            width={384}
+                            height={384}
                             className="w-full h-full object-contain"
                             onError={(e) => {
-                              // Hide the image and show fallback
                               e.currentTarget.style.display = 'none';
+                              const fallback = e.currentTarget.nextElementSibling as HTMLElement | null;
+                              if (fallback) fallback.style.display = 'flex';
                             }}
                           />
-                          <div className="absolute inset-0 bg-primary/10 rounded flex items-center justify-center text-primary font-bold text-sm">
+                          <div style={{display: 'none'}} className="absolute inset-0 rounded flex items-center justify-center text-primary font-bold text-sm">
                             SLIIT
                           </div>
                         </div>
@@ -161,19 +162,20 @@ export default function EducationPage() {
                   <div className="flex items-start justify-between">
                     <div className="flex gap-4 items-center">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-accent/20 bg-white p-2 relative">
+                        <div className="w-24 h-24 rounded-lg overflow-hidden border-2 border-accent/20 p-0 relative">
                           <Image
                             src="/logos/richmond-college-logo.png"
                             alt="Richmond College Logo"
-                            width={128}
-                            height={128}
+                            width={384}
+                            height={384}
                             className="w-full h-full object-contain"
                             onError={(e) => {
-                              // Hide the image and show fallback
                               e.currentTarget.style.display = 'none';
+                              const fallback = e.currentTarget.nextElementSibling as HTMLElement | null;
+                              if (fallback) fallback.style.display = 'flex';
                             }}
                           />
-                          <div className="absolute inset-0 bg-accent/10 rounded flex items-center justify-center text-accent font-bold text-xs">
+                          <div style={{display: 'none'}} className="absolute inset-0 rounded flex items-center justify-center text-accent font-bold text-xs">
                             RC
                           </div>
                         </div>
