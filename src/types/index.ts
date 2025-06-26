@@ -19,6 +19,9 @@ export interface ProjectMetrics {
   retention?: string;
   completion?: string;
   satisfaction?: string;
+  complexity?: string;
+  functionality?: string;
+  learning?: string;
 }
 
 export interface Project {
