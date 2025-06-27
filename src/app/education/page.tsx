@@ -84,11 +84,11 @@ const certifications = [
   {
     name: "AI Skills Fest Challenge: Treasure Hunt for AI Skills",
     status: "completed",
-    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
-    provider: "Postman",
+    description: "Demonstrated skills in AI skills through a challenge-based learning experience.",
+    provider: "Microsoft Learn",
     date: "2025",
-    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
-    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
+    imageUrl: "/certs/AI Skills Fest Challenge Treasure Hunt for AI Skills.png",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/XYZ12345?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
