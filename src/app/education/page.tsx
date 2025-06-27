@@ -56,8 +56,8 @@ const certifications = [
     color: "bg-orange-500/10 text-orange-500"
   },
   {
-    name: "",
-    status: "in-progress",
+    name: "Microsoft Azure Fundamentals: Describe cloud concepts",
+    status: "completed",
     description: "Cloud computing fundamentals",
     provider: "Microsoft",
     date: "In Progress",
