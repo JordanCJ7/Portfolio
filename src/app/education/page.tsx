@@ -70,7 +70,7 @@ const certifications = [
     provider: "GitHub",
     date: "2024",
     imageUrl: "/certs/github.png",
-    credentialUrl: "https://github.com/certifications/markdown-collaboration",
+    credentialUrl: "",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
