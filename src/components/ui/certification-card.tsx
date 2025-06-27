@@ -35,7 +35,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   height,
 }) => {
   // Defaults
-  const defaultRect = { w: 384, h: 300 };
+  const defaultRect = { w: 400, h: 300 };
   const defaultSquare = { w: 300, h: 300 };
   const imgW = width || (aspect === 'square' ? defaultSquare.w : defaultRect.w);
   const imgH = height || (aspect === 'square' ? defaultSquare.h : defaultRect.h);
@@ -45,11 +45,10 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
         <Image
           src={imageUrl}
           alt={name + ' logo'}
-          fill={false}
           width={imgW}
           height={imgH}
           className="object-contain rounded-lg group-hover:scale-105 transition-transform"
-          style={{background: 'none'}}
+          style={{background: 'none', width: imgW, height: imgH, maxWidth: imgW, maxHeight: imgH}}
         />
         <span className="absolute bottom-2 right-2 bg-white/80 rounded-full p-1">
           <ExternalLink className="h-5 w-5 text-primary" />
