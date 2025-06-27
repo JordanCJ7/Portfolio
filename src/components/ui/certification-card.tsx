@@ -37,8 +37,8 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   showLinkIcon = true,
 }) => {
   // Defaults
-  const defaultRect = { w: 400, h: 300 };
-  const defaultSquare = { w: 300, h: 300 };
+  const defaultRect = { w: 300, h: 200 };
+  const defaultSquare = { w: 200, h: 200 };
   const imgW = width || (aspect === 'square' ? defaultSquare.w : defaultRect.w);
   const imgH = height || (aspect === 'square' ? defaultSquare.h : defaultRect.h);
   return (
