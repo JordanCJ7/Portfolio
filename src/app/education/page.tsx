@@ -23,7 +23,7 @@ const certifications = [
   {
     name: "Microsoft Azure Fundamentals AZ-900",
     status: "scheduled",
-    description: "Scheduled Next Month - Fully Prepared",
+    description: "Scheduled for July 2025 – Comprehensive preparation in Azure cloud concepts, services, and security.",
     provider: "Microsoft",
     date: "July 2025",
     imageUrl: "/certs/Microsoft Certified Azure Fundamentals AZ 900 Badge.png",
@@ -31,12 +31,12 @@ const certifications = [
     aspect: "rect" as const,
     icon: <Award className="h-4 w-4" />,
     color: "bg-blue-500/10 text-blue-500",
-    showLinkIcon: false // Do not display the link icon
+    showLinkIcon: false
   },
   {
     name: "Postman API Fundamentals Student Expert",
     status: "completed",
-    description: "API design, testing, and documentation",
+    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
     provider: "Postman",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
@@ -48,7 +48,7 @@ const certifications = [
   {
     name: "Collaborate with others with Markdown and GitHub Pages",
     status: "completed",
-    description: "Version control and documentation",
+    description: "Mastered collaborative workflows, documentation, and publishing using Markdown and GitHub Pages.",
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Collaborate with others with Markdown and GitHub Pages.png",
@@ -58,9 +58,9 @@ const certifications = [
     color: "bg-green-500/10 text-green-500"
   },
   {
-    name: "Postman API Fundamentals Student Expert",
+    name: "AI Skills Fest Challenge: Architecture Recipes for AI-Powered Applications",
     status: "completed",
-    description: "API design, testing, and documentation",
+    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
     provider: "Postman",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
@@ -72,7 +72,7 @@ const certifications = [
   {
     name: "Postman API Fundamentals Student Expert",
     status: "completed",
-    description: "API design, testing, and documentation",
+    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
     provider: "Postman",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
@@ -84,7 +84,7 @@ const certifications = [
   {
     name: "Postman API Fundamentals Student Expert",
     status: "completed",
-    description: "API design, testing, and documentation",
+    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
     provider: "Postman",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
@@ -94,9 +94,9 @@ const certifications = [
     color: "bg-orange-500/10 text-orange-500"
   },
   {
-    name: "Microsoft Azure Fundamentals: Describe cloud concepts",
+    name: "MS Azure Fundamentals: Describe cloud concepts",
     status: "completed",
-    description: "Cloud computing fundamentals",
+    description: "Gained foundational knowledge of cloud computing principles and Azure services.",
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe cloud concepts.png",
@@ -106,9 +106,9 @@ const certifications = [
     color: "bg-yellow-500/10 text-yellow-500"
   },
   {
-    name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
+    name: "MS Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
-    description: "Azure architecture and cloud services fundamentals",
+    description: "Acquired understanding of Azure architecture, core services, and cloud solutions.",
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
@@ -118,12 +118,12 @@ const certifications = [
     color: "bg-green-500/10 text-green-500"
   },
   {
-    name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
+    name: "MS Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
-    description: "Microsoft Azure Fundamentals: Describe Azure management and governance",
+    description: "Explored Azure management, governance, and best practices for cloud administration.",
     provider: "Microsoft Learn",
     date: "2025",
-    imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
+    imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure management and governance.png",
     credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/XQSLW9DY?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
