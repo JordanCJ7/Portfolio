@@ -76,7 +76,7 @@ const certifications = [
     provider: "Various",
     date: "2025",
     imageUrl: "/certs/ai-skills-fest.png",
-    credentialUrl: "https://aiskillsfest.com/certificates/your-certificate-id",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/W2DJ87GN?sharingId=BA5B855C8870666",
     aspect: "square" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-purple-500/10 text-purple-500"
