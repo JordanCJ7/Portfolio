@@ -34,18 +34,6 @@ const certifications = [
     showLinkIcon: false // Do not display the link icon
   },
   {
-    name: "GitHub Copilot Proficiency",
-    status: "completed",
-    description: "Advanced AI-assisted development",
-    provider: "GitHub",
-    date: "2025",
-    imageUrl: "/certs/copilot.png",
-    credentialUrl: "https://github.com/certifications/copilot-proficiency",
-    aspect: "square" as const,
-    icon: <Bot className="h-4 w-4" />,
-    color: "bg-green-500/10 text-green-500"
-  },
-  {
     name: "Postman API Fundamentals Student Expert",
     status: "completed",
     description: "API design, testing, and documentation",
