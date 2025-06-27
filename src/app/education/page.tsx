@@ -46,18 +46,6 @@ const certifications = [
     color: "bg-orange-500/10 text-orange-500"
   },
   {
-    name: "Microsoft Azure Fundamentals: Describe cloud concepts",
-    status: "completed",
-    description: "Cloud computing fundamentals",
-    provider: "Microsoft Learn",
-    date: "2025",
-    imageUrl: "/certs/Microsoft Azure Fundamentals Describe cloud concepts.png",
-    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/VJU5HKNM?sharingId=BA5B855C8870666",
-    aspect: "rect" as const,
-    icon: <Clock className="h-4 w-4" />,
-    color: "bg-yellow-500/10 text-yellow-500"
-  },
-  {
     name: "Collaborate with others with Markdown and GitHub Pages",
     status: "completed",
     description: "Version control and documentation",
@@ -70,40 +58,76 @@ const certifications = [
     color: "bg-green-500/10 text-green-500"
   },
   {
+    name: "Postman API Fundamentals Student Expert",
+    status: "completed",
+    description: "API design, testing, and documentation",
+    provider: "Postman",
+    date: "2025",
+    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
+    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
+    aspect: "rect" as const,
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-orange-500/10 text-orange-500"
+  },
+  {
+    name: "Postman API Fundamentals Student Expert",
+    status: "completed",
+    description: "API design, testing, and documentation",
+    provider: "Postman",
+    date: "2025",
+    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
+    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
+    aspect: "rect" as const,
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-orange-500/10 text-orange-500"
+  },
+  {
+    name: "Postman API Fundamentals Student Expert",
+    status: "completed",
+    description: "API design, testing, and documentation",
+    provider: "Postman",
+    date: "2025",
+    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
+    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
+    aspect: "rect" as const,
+    icon: <CheckCircle className="h-4 w-4" />,
+    color: "bg-orange-500/10 text-orange-500"
+  },
+  {
+    name: "Microsoft Azure Fundamentals: Describe cloud concepts",
+    status: "completed",
+    description: "Cloud computing fundamentals",
+    provider: "Microsoft Learn",
+    date: "2025",
+    imageUrl: "/certs/Microsoft Azure Fundamentals Describe cloud concepts.png",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/VJU5HKNM?sharingId=BA5B855C8870666",
+    aspect: "rect" as const,
+    icon: <Clock className="h-4 w-4" />,
+    color: "bg-yellow-500/10 text-yellow-500"
+  },
+  {
     name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
-    description: "AI development and integration challenges",
+    description: "Azure architecture and cloud services fundamentals",
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
     credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/W2DJ87GN?sharingId=BA5B855C8870666",
-    aspect: "square" as const,
+    aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
-    color: "bg-purple-500/10 text-purple-500"
+    color: "bg-green-500/10 text-green-500"
   },
   {
-    name: "AI Skills Fest Challenge",
+    name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
-    description: "AI development and integration challenges",
-    provider: "Various",
+    description: "Azure architecture and cloud services fundamentals",
+    provider: "Microsoft Learn",
     date: "2025",
-    imageUrl: "/certs/ai-skills-fest.png",
-    credentialUrl: "https://aiskillsfest.com/certificates/your-certificate-id",
-    aspect: "square" as const,
+    imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/W2DJ87GN?sharingId=BA5B855C8870666",
+    aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
-    color: "bg-purple-500/10 text-purple-500"
-  },
-  {
-    name: "AI Skills Fest Challenge",
-    status: "completed",
-    description: "AI development and integration challenges",
-    provider: "Various",
-    date: "2025",
-    imageUrl: "/certs/ai-skills-fest.png",
-    credentialUrl: "https://aiskillsfest.com/certificates/your-certificate-id",
-    aspect: "square" as const,
-    icon: <CheckCircle className="h-4 w-4" />,
-    color: "bg-purple-500/10 text-purple-500"
+    color: "bg-green-500/10 text-green-500"
   }
 ];
 
