@@ -62,7 +62,7 @@ const certifications = [
     provider: "Microsoft Learn",
     date: "2024",
     imageUrl: "/certs/azure.png",
-    credentialUrl: "",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/VJU5HKNM?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <Clock className="h-4 w-4" />,
     color: "bg-yellow-500/10 text-yellow-500"
