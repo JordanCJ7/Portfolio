@@ -76,7 +76,7 @@ const certifications = [
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/AI Skills Fest Challenge Create agentic AI solutions with Azure AI Foundry.png",
-    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/UR2RTT53?sharingId=BA5B855C8870666",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/9YZY4KDU?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
