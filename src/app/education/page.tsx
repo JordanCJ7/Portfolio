@@ -200,7 +200,7 @@ export default function EducationPage() {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-foreground">
-                          Bachelor of Software Engineering
+                          BSc (Hons) in Information Technology – Software Engineering
                         </h3>
                         <p className="text-muted-foreground font-medium">
                           Sri Lanka Institute of Information Technology (SLIIT)
