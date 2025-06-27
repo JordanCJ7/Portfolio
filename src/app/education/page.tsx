@@ -60,7 +60,7 @@ const certifications = [
     status: "completed",
     description: "Cloud computing fundamentals",
     provider: "Microsoft Learn",
-    date: "In Progress",
+    date: "2024",
     imageUrl: "/certs/azure.png",
     credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     aspect: "rect" as const,
