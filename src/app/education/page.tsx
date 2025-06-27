@@ -17,6 +17,7 @@ import {
   Users
 } from 'lucide-react';
 import CertificationCard from '@/components/ui/certification-card';
+import React, { useState, useEffect } from 'react';
 
 const certifications = [
   {
@@ -130,6 +131,22 @@ const readinessSkills = [
 ];
 
 export default function EducationPage() {
+  // Carousel logic for certifications
+  const CARDS_PER_PAGE = 6;
+  const [currentPage, setCurrentPage] = useState(0);
+  const totalPages = Math.ceil(certifications.length / CARDS_PER_PAGE);
+
+  useEffect(() => {
+    if (totalPages <= 1) return;
+    const timer = setInterval(() => {
+      setCurrentPage((prev) => (prev + 1) % totalPages);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [totalPages]);
+
+  const startIdx = currentPage * CARDS_PER_PAGE;
+  const visibleCerts = certifications.slice(startIdx, startIdx + CARDS_PER_PAGE);
+
   return (
     <SectionWrapper
       title="Education & Certifications"
@@ -292,10 +309,24 @@ export default function EducationPage() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {certifications.map((cert) => (
-                  <CertificationCard key={cert.name} {...cert} />
+                {visibleCerts.map((cert) => (
+                  <CertificationCard key={cert.name + cert.date + cert.provider} {...cert} />
                 ))}
               </div>
+              {totalPages > 1 && (
+                <div className="flex justify-center mt-4 gap-2">
+                  {Array.from({ length: totalPages }).map((_, idx) => (
+                    <button
+                      key={idx}
+                      className={`w-2.5 h-2.5 rounded-full transition-colors duration-200 border border-accent/40 ${
+                        idx === currentPage ? 'bg-accent' : 'bg-muted'
+                      }`}
+                      aria-label={`Go to page ${idx + 1}`}
+                      onClick={() => setCurrentPage(idx)}
+                    />
+                  ))}
+                </div>
+              )}
             </CardContent>
           </Card>
         </AnimatedElement>
