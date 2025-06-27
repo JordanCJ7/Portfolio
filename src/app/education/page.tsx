@@ -26,10 +26,11 @@ const certifications = [
     provider: "Microsoft",
     date: "July 2025",
     imageUrl: "/certs/Microsoft Certified Azure Fundamentals AZ 900 Badge.png",
-    // credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
+    credentialUrl: "",
     aspect: "rect" as const,
     icon: <Award className="h-4 w-4" />,
-    color: "bg-blue-500/10 text-blue-500"
+    color: "bg-blue-500/10 text-blue-500",
+    showLinkIcon: false // Do not display the link icon
   },
   {
     name: "GitHub Copilot Proficiency",
