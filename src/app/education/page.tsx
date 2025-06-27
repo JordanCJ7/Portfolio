@@ -27,6 +27,7 @@ const certifications = [
     date: "July 2025",
     imageUrl: "/certs/azure.png",
     credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
+    aspect: "rect",
     icon: <Award className="h-4 w-4" />,
     color: "bg-blue-500/10 text-blue-500"
   },
@@ -38,6 +39,7 @@ const certifications = [
     date: "2025",
     imageUrl: "/certs/copilot.png",
     credentialUrl: "https://github.com/certifications/copilot-proficiency",
+    aspect: "square",
     icon: <Bot className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
@@ -49,6 +51,7 @@ const certifications = [
     date: "2024",
     imageUrl: "/certs/postman.png",
     credentialUrl: "https://badgr.com/public/assertions/postman-api-fundamentals",
+    aspect: "rect",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
   },
@@ -60,6 +63,7 @@ const certifications = [
     date: "In Progress",
     imageUrl: "/certs/azure.png",
     credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
+    aspect: "rect",
     icon: <Clock className="h-4 w-4" />,
     color: "bg-yellow-500/10 text-yellow-500"
   },
@@ -71,6 +75,7 @@ const certifications = [
     date: "2024",
     imageUrl: "/certs/Collaborate with others with Markdown and GitHub Pages.png",
     credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/8ZQFQ57W?sharingId=BA5B855C8870666",
+    aspect: "rect",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
@@ -82,6 +87,7 @@ const certifications = [
     date: "2024",
     imageUrl: "/certs/ai-skills-fest.png",
     credentialUrl: "https://aiskillsfest.com/certificates/your-certificate-id",
+    aspect: "square",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-purple-500/10 text-purple-500"
   }

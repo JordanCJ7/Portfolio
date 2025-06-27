@@ -11,6 +11,7 @@ interface CertificationCardProps {
   description: string;
   imageUrl: string;
   credentialUrl: string;
+  aspect?: 'rect' | 'square';
 }
 
 const statusVariant = (status: string) => {
@@ -27,18 +28,20 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   description,
   imageUrl,
   credentialUrl,
+  aspect = 'rect',
 }) => (
   <div className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow flex flex-col items-center text-center">
-    <a href={credentialUrl} target="_blank" rel="noopener noreferrer" className="group block w-20 h-20 mb-2 relative">
+    <a href={credentialUrl} target="_blank" rel="noopener noreferrer" className={`group block w-40 ${aspect === 'square' ? 'aspect-square' : 'aspect-[4/3]'} mb-2 relative`}>
       <Image
         src={imageUrl}
         alt={name + ' logo'}
         fill
-        className="object-contain rounded-lg border bg-white group-hover:scale-105 transition-transform"
-        sizes="80px"
+        className="object-contain rounded-lg group-hover:scale-105 transition-transform"
+        sizes="160px"
+        style={{background: 'none'}}
       />
-      <span className="absolute bottom-1 right-1 bg-white/80 rounded-full p-1">
-        <ExternalLink className="h-4 w-4 text-primary" />
+      <span className="absolute bottom-2 right-2 bg-white/80 rounded-full p-1">
+        <ExternalLink className="h-5 w-5 text-primary" />
       </span>
     </a>
     <h4 className="font-semibold text-sm text-foreground mt-2">{name}</h4>
