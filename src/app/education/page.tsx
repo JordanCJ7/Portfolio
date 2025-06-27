@@ -70,7 +70,7 @@ const certifications = [
     color: "bg-green-500/10 text-green-500"
   },
   {
-    name: "AI Skills Fest Challenge",
+    name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
     description: "AI development and integration challenges",
     provider: "Various",
