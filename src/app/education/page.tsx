@@ -61,7 +61,7 @@ const certifications = [
     description: "Cloud computing fundamentals",
     provider: "Microsoft Learn",
     date: "2024",
-    imageUrl: "/certs/azure.png",
+    imageUrl: "/certs/.png",
     credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/VJU5HKNM?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <Clock className="h-4 w-4" />,
