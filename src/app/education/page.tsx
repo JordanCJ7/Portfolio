@@ -59,7 +59,7 @@ const certifications = [
     name: "Microsoft Azure Fundamentals: Describe cloud concepts",
     status: "completed",
     description: "Cloud computing fundamentals",
-    provider: "Microsoft",
+    provider: "Microsoft Learn",
     date: "In Progress",
     imageUrl: "/certs/azure.png",
     credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
