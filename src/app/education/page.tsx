@@ -64,7 +64,7 @@ const certifications = [
     color: "bg-yellow-500/10 text-yellow-500"
   },
   {
-    name: "GitHub Collaboration with Markdown",
+    name: "",
     status: "completed",
     description: "Version control and documentation",
     provider: "GitHub",
