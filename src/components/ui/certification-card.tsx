@@ -36,9 +36,9 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   height,
   showLinkIcon = true,
 }) => {
-  // Defaults
+  // Defaults - make all images the same width for consistency
   const defaultRect = { w: 300, h: 200 };
-  const defaultSquare = { w: 200, h: 200 };
+  const defaultSquare = { w: 300, h: 300 };
   const imgW = width || (aspect === 'square' ? defaultSquare.w : defaultRect.w);
   const imgH = height || (aspect === 'square' ? defaultSquare.h : defaultRect.h);
   return (
