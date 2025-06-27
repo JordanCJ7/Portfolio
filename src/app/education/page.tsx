@@ -144,9 +144,6 @@ export default function EducationPage() {
     return () => clearInterval(timer);
   }, [totalPages]);
 
-  const startIdx = currentPage * CARDS_PER_PAGE;
-  const visibleCerts = certifications.slice(startIdx, startIdx + CARDS_PER_PAGE);
-
   return (
     <SectionWrapper
       title="Education & Certifications"
@@ -308,18 +305,46 @@ export default function EducationPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {visibleCerts.map((cert) => (
-                  <CertificationCard key={cert.name + cert.date + cert.provider} {...cert} />
-                ))}
+              <div className="relative overflow-hidden">
+                <div 
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{ 
+                    transform: `translateX(-${currentPage * (100 / totalPages)}%)`,
+                    width: `${totalPages * 100}%`
+                  }}
+                >
+                  {Array.from({ length: totalPages }).map((_, pageIdx) => {
+                    const pageStartIdx = pageIdx * CARDS_PER_PAGE;
+                    const pageCerts = certifications.slice(pageStartIdx, pageStartIdx + CARDS_PER_PAGE);
+                    
+                    return (
+                      <div 
+                        key={pageIdx}
+                        className="flex-shrink-0"
+                        style={{ width: `${100 / totalPages}%` }}
+                      >
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                          {pageCerts.map((cert, certIndex) => (
+                            <div
+                              key={`${pageIdx}-${certIndex}-${cert.name}-${cert.date}-${cert.provider}`}
+                              className="transform transition-all duration-300 hover:scale-105"
+                            >
+                              <CertificationCard {...cert} />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
               {totalPages > 1 && (
-                <div className="flex justify-center mt-4 gap-2">
+                <div className="flex justify-center mt-6 gap-2">
                   {Array.from({ length: totalPages }).map((_, idx) => (
                     <button
                       key={idx}
-                      className={`w-2.5 h-2.5 rounded-full transition-colors duration-200 border border-accent/40 ${
-                        idx === currentPage ? 'bg-accent' : 'bg-muted'
+                      className={`w-3 h-3 rounded-full transition-all duration-300 border border-accent/40 hover:scale-110 ${
+                        idx === currentPage ? 'bg-accent shadow-lg' : 'bg-muted hover:bg-accent/50'
                       }`}
                       aria-label={`Go to page ${idx + 1}`}
                       onClick={() => setCurrentPage(idx)}
