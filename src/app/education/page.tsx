@@ -25,8 +25,8 @@ const certifications = [
     description: "Scheduled Next Month - Fully Prepared",
     provider: "Microsoft",
     date: "July 2025",
-    imageUrl: "/certs/Microsoft Certified Azure Fundamentals AZ 900 Badge.WEBP",
-    credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
+    imageUrl: "/certs/Microsoft Certified Azure Fundamentals AZ 900 Badge.png",
+    // credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     aspect: "rect" as const,
     icon: <Award className="h-4 w-4" />,
     color: "bg-blue-500/10 text-blue-500"
