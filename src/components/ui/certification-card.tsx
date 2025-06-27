@@ -35,8 +35,8 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   height,
 }) => {
   // Defaults
-  const defaultRect = { w: 384, h: 288 };
-  const defaultSquare = { w: 320, h: 320 };
+  const defaultRect = { w: 384, h: 300 };
+  const defaultSquare = { w: 300, h: 300 };
   const imgW = width || (aspect === 'square' ? defaultSquare.w : defaultRect.w);
   const imgH = height || (aspect === 'square' ? defaultSquare.h : defaultRect.h);
   return (
