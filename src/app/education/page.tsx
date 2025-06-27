@@ -75,8 +75,8 @@ const certifications = [
     description: "Demonstrated skills in creating agentic AI solutions using Azure AI Foundry.",
     provider: "Microsoft Learn",
     date: "2025",
-    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
-    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
+    imageUrl: "/certs/AI Skills Fest Challenge Create agentic AI solutions with Azure AI Foundry.png",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/UR2RTT53?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
