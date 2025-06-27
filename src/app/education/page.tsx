@@ -70,7 +70,7 @@ const certifications = [
     color: "bg-orange-500/10 text-orange-500"
   },
   {
-    name: "Postman API Fundamentals Student Expert",
+    name: "AI Skills Fest Challenge: Create agentic AI solutions with Azure AI Foundry",
     status: "completed",
     description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
     provider: "Postman",
