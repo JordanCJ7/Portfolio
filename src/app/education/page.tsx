@@ -73,7 +73,7 @@ const certifications = [
     name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
     description: "AI development and integration challenges",
-    provider: "",
+    provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
     credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/W2DJ87GN?sharingId=BA5B855C8870666",
