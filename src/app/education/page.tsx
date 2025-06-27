@@ -120,7 +120,7 @@ const certifications = [
   {
     name: "Microsoft Azure Fundamentals: Describe Azure architecture and services",
     status: "completed",
-    description: "Azure architecture and cloud services fundamentals",
+    description: "Microsoft Azure Fundamentals: Describe Azure management and governance",
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
