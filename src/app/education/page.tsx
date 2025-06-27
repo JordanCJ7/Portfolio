@@ -72,8 +72,8 @@ const certifications = [
   {
     name: "AI Skills Fest Challenge: Create agentic AI solutions with Azure AI Foundry",
     status: "completed",
-    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
-    provider: "Postman",
+    description: "Demonstrated skills in creating agentic AI solutions using Azure AI Foundry.",
+    provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
     credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
