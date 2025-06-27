@@ -124,7 +124,7 @@ const certifications = [
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Microsoft Azure Fundamentals Describe Azure architecture and services.png",
-    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/W2DJ87GN?sharingId=BA5B855C8870666",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/XQSLW9DY?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
