@@ -67,10 +67,10 @@ const certifications = [
     name: "Collaborate with others with Markdown and GitHub Pages",
     status: "completed",
     description: "Version control and documentation",
-    provider: "GitHub",
+    provider: "Microsoft Learn",
     date: "2024",
-    imageUrl: "/certs/github.png",
-    credentialUrl: "",
+    imageUrl: "/certs/Collaborate with others with Markdown and GitHub Pages.png",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/8ZQFQ57W?sharingId=BA5B855C8870666",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
