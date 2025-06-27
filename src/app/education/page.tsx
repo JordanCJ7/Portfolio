@@ -88,7 +88,7 @@ const certifications = [
     provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/AI Skills Fest Challenge Treasure Hunt for AI Skills.png",
-    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/XYZ12345?sharingId=BA5B855C8870666",
+    credentialUrl: "https://learn.microsoft.com/api/achievements/share/en-us/JanithaSuranjanaLakshanGamage/FM4MGRYX?sharingId=BA5B855C8870666",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
