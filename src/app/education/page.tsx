@@ -60,8 +60,8 @@ const certifications = [
   {
     name: "AI Skills Fest Challenge: Architecture Recipes for AI-Powered Applications",
     status: "completed",
-    description: "Demonstrated skills in API design, testing, documentation, and collaboration using Postman.",
-    provider: "Postman",
+    description: "Demonstrated skills in designing AI-powered applications and architectural best practices.",
+    provider: "Microsoft Learn",
     date: "2025",
     imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
     credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
