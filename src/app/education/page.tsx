@@ -38,9 +38,9 @@ const certifications = [
     status: "completed",
     description: "API design, testing, and documentation",
     provider: "Postman",
-    date: "2024",
-    imageUrl: "/certs/postman.png",
-    credentialUrl: "https://badgr.com/public/assertions/postman-api-fundamentals",
+    date: "2025",
+    imageUrl: "/certs/Postman API Fundamentals Student Expert.png",
+    credentialUrl: "https://api.badgr.io/public/assertions/bTETPxnZT7u-hDzCuaUN4A",
     aspect: "rect" as const,
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
