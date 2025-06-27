@@ -31,13 +31,13 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   aspect = 'rect',
 }) => (
   <div className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow flex flex-col items-center text-center">
-    <a href={credentialUrl} target="_blank" rel="noopener noreferrer" className={`group block w-40 ${aspect === 'square' ? 'aspect-square' : 'aspect-[4/3]'} mb-2 relative`}>
+    <a href={credentialUrl} target="_blank" rel="noopener noreferrer" className={`group block w-64 ${aspect === 'square' ? 'aspect-square' : 'aspect-[4/3]'} mb-2 relative`}>
       <Image
         src={imageUrl}
         alt={name + ' logo'}
         fill
         className="object-contain rounded-lg group-hover:scale-105 transition-transform"
-        sizes="160px"
+        sizes="256px"
         style={{background: 'none'}}
       />
       <span className="absolute bottom-2 right-2 bg-white/80 rounded-full p-1">
