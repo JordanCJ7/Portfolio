@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Github, TrendingUp, Users, Zap } from 'lucide-react';
 import AnimatedElement from './animated-element';
+import ExpandableText from '@/components/ui/expandable-text';
 
 interface ProjectCardProps {
   project: Project;
@@ -37,8 +38,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.role && (
             <p className="text-sm text-primary font-medium mb-2">{project.role}</p>
           )}
-          <CardDescription className="text-muted-foreground mb-4 line-clamp-3">
-            {project.description}
+          <CardDescription className="text-muted-foreground mb-4">
+            <ExpandableText text={project.description} lines={3} />
           </CardDescription>
           
           {/* Product Metrics */}
