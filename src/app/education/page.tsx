@@ -16,6 +16,7 @@ import {
   Bot,
   Users
 } from 'lucide-react';
+import CertificationCard from '@/components/ui/certification-card';
 
 const certifications = [
   {
@@ -24,6 +25,8 @@ const certifications = [
     description: "Scheduled Next Month - Fully Prepared",
     provider: "Microsoft",
     date: "July 2025",
+    imageUrl: "/certs/azure.png",
+    credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     icon: <Award className="h-4 w-4" />,
     color: "bg-blue-500/10 text-blue-500"
   },
@@ -33,6 +36,8 @@ const certifications = [
     description: "Advanced AI-assisted development",
     provider: "GitHub",
     date: "2025",
+    imageUrl: "/certs/copilot.png",
+    credentialUrl: "https://github.com/certifications/copilot-proficiency",
     icon: <Bot className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
@@ -42,6 +47,8 @@ const certifications = [
     description: "API design, testing, and documentation",
     provider: "Postman",
     date: "2024",
+    imageUrl: "/certs/postman.png",
+    credentialUrl: "https://badgr.com/public/assertions/postman-api-fundamentals",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-orange-500/10 text-orange-500"
   },
@@ -51,6 +58,8 @@ const certifications = [
     description: "Cloud computing fundamentals",
     provider: "Microsoft",
     date: "In Progress",
+    imageUrl: "/certs/azure.png",
+    credentialUrl: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     icon: <Clock className="h-4 w-4" />,
     color: "bg-yellow-500/10 text-yellow-500"
   },
@@ -60,6 +69,8 @@ const certifications = [
     description: "Version control and documentation",
     provider: "GitHub",
     date: "2024",
+    imageUrl: "/certs/github.png",
+    credentialUrl: "https://github.com/certifications/markdown-collaboration",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-green-500/10 text-green-500"
   },
@@ -69,6 +80,8 @@ const certifications = [
     description: "AI development and integration challenges",
     provider: "Various",
     date: "2024",
+    imageUrl: "/certs/ai-skills-fest.png",
+    credentialUrl: "https://aiskillsfest.com/certificates/your-certificate-id",
     icon: <CheckCircle className="h-4 w-4" />,
     color: "bg-purple-500/10 text-purple-500"
   }
@@ -247,34 +260,9 @@ export default function EducationPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => (
-                  <div key={cert.name} className="border rounded-lg p-4 space-y-3 hover:shadow-md transition-shadow">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className={`p-1.5 rounded ${cert.color}`}>
-                          {cert.icon}
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-sm text-foreground">
-                            {cert.name}
-                          </h4>
-                          <p className="text-xs text-muted-foreground">
-                            {cert.provider}
-                          </p>
-                        </div>
-                      </div>
-                      <Badge 
-                        variant={cert.status === 'completed' ? 'default' : cert.status === 'scheduled' ? 'secondary' : 'outline'}
-                        className="text-xs"
-                      >
-                        {cert.date}
-                      </Badge>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {cert.description}
-                    </p>
-                  </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {certifications.map((cert) => (
+                  <CertificationCard key={cert.name} {...cert} />
                 ))}
               </div>
             </CardContent>
