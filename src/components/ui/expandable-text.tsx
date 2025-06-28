@@ -57,7 +57,7 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, classN
       {shouldShowButton && (
         <button
           type="button"
-          className="ml-2 text-primary underline text-xs focus:outline-none"
+          className="block mt-2 text-primary underline text-xs focus:outline-none text-left"
           onClick={handleClick}
         >
           {expanded ? 'Show less' : 'Read more'}
