@@ -45,16 +45,15 @@ export default function ContactPage() {
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
     form.reset();
-  };  
-  
+  };
   return (
     <SectionWrapper
       title="Let's Connect - Open for Internships"
       subtitle={
-        <>
-          I'm actively seeking internship opportunities where I can contribute as a developer, product contributor, or both. <br />
+        <div className="max-w-xl mx-auto">
+          I'm actively seeking internship opportunities where I can contribute as a Developer, Product Strategist, or both. <br />
           Let's discuss how I can add value to your team while learning and growing professionally.
-        </>
+        </div>
       }
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
