@@ -28,10 +28,10 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, classN
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!expanded && onReadMoreClick) {
       onReadMoreClick(e);
+      setExpanded(true);
     } else {
       setExpanded(false);
     }
-    setExpanded((prev) => !prev);
   };
 
   return (
