@@ -24,9 +24,9 @@ const sampleProjects: Project[] = [
     imageUrl: '/projects/Flashboard.jpeg',
     tags: ['Next.js', 'TypeScript', 'Radix UI', 'Firebase Studio', 'Genkit', 'Real-time Collaboration', 'Wiki Platform'],
     categories: ['Product Management', 'Web Development', 'AI/ML'],
-    projectUrl: '#',
+    // projectUrl: '#',
     repoUrl: 'https://github.com/JordanCJ7/FlashBoard-Wiki',
-    year: 2024,
+    year: 2025,
     client: 'Flashboard',
     role: 'Full Stack Developer & Product Strategist',
     metrics: {
@@ -64,7 +64,7 @@ const sampleProjects: Project[] = [
     categories: ['Product Management', 'Web Development'],
     projectUrl: '#',
     repoUrl: '#',
-    year: 2024,
+    year: 2025,
     client: 'Salon Pabalu',
     role: 'Team Lead & Product Owner',
     metrics: {
@@ -102,7 +102,7 @@ const sampleProjects: Project[] = [
     categories: ['Product Management', 'Data Science', 'Web Development'],
     projectUrl: '#',
     repoUrl: '#',
-    year: 2024,
+    year: 2025,
     client: 'E-Commerce Startup',
     role: 'Product Analyst & Frontend Developer',
     metrics: {
@@ -121,7 +121,7 @@ const sampleProjects: Project[] = [
     categories: ['Product Management', 'UX Strategy', 'Mobile App'],
     projectUrl: '#',
     repoUrl: '#',
-    year: 2024,
+    year: 2025,
     client: 'FinTech Startup',
     role: 'Product Manager',
     metrics: {
@@ -140,7 +140,7 @@ const sampleProjects: Project[] = [
     categories: ['AI/ML', 'Web Development'],
     projectUrl: '#',
     repoUrl: '#',
-    year: 2024,
+    year: 2025,
     client: 'Personal Project',
     role: 'AI-Enhanced Solo Developer',
     metrics: {
