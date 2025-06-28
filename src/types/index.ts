@@ -27,8 +27,8 @@ export interface ProjectMetrics {
 export interface Project {
   id: string;
   title: string;
-  description: string;
-  longDescription?: string;
+  description: string | React.ReactNode;
+  longDescription?: string | React.ReactNode;
   imageUrl: string;
   tags: string[]; // e.g., ['React', 'Node.js', 'UI/UX', 'Product Strategy']
   categories: string[]; // e.g., ['Web Development', 'Product Management']
