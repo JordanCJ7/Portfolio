@@ -4,9 +4,10 @@ interface ExpandableTextProps {
   text: string | React.ReactNode;
   lines?: number;
   className?: string;
+  onReadMoreClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, className }) => {
+const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, className, onReadMoreClick }) => {
   const [expanded, setExpanded] = useState(false);
 
   const isString = typeof text === 'string';
@@ -23,6 +24,15 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, classN
       preview = text;
     }
   }
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!expanded && onReadMoreClick) {
+      onReadMoreClick(e);
+    } else {
+      setExpanded(false);
+    }
+    setExpanded((prev) => !prev);
+  };
 
   return (
     <div className={className}>
@@ -48,7 +58,7 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text, lines = 2, classN
         <button
           type="button"
           className="ml-2 text-primary underline text-xs focus:outline-none"
-          onClick={() => setExpanded((e) => !e)}
+          onClick={handleClick}
         >
           {expanded ? 'Show less' : 'Read more'}
         </button>
