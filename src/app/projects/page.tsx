@@ -18,7 +18,7 @@ import {
 const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'Flashboard Wiki',
+    title: 'Flashboard Wiki - Knowledgebase',
     description: 'Introducing Flashboard Wiki: A dynamic web app built with Next.js, TypeScript, Radix UI, Firebase Studio, and Genkit. Designed to offer a comprehensive and interactive resource for everything related to Flashboard, the platform is optimized for performance, scalability, and user experience.',
     longDescription: 'Key Features:\n- User-friendly Interface: Seamless, responsive design for easy browsing and contribution.\n- Real-time Collaboration: Users can edit and update content dynamically.\n- Comprehensive Wiki: In-depth articles, tutorials, and FAQs covering all Flashboard features.\n- Searchable Content: Fast, efficient, and robust search for quick access to information.\n\nOur goal is to provide an all-in-one hub for Flashboard users, making information and resources more accessible than ever.',
     imageUrl: '/projects/Flashboard.jpeg',
@@ -37,7 +37,7 @@ const sampleProjects: Project[] = [
   },
   {
     id: '2', 
-    title: 'FoodieFly - Microservices Food Delivery Platform',
+    title: 'FoodieFly - Food Delivery Platform',
     description: 'Led a university team to architect and deliver a sophisticated cloud-native microservices platform using Docker containerization. Managed project timeline using PM tools, coordinated team members, and implemented scalable architecture with container orchestration for optimal performance.',
     longDescription: 'Key Features:\n- Microservices Architecture: Decoupled services for scalability and maintainability.\n- Docker Containerization: Ensured consistent environments and rapid deployment.\n- Team Management: Oversaw project planning, task allocation, and delivery.\n- Cloud-Native: Leveraged cloud infrastructure for reliability and performance.\n\nThis project demonstrated leadership in both technical and project management domains, delivering a robust solution ahead of schedule.',
     imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
