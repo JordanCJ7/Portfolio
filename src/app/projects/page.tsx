@@ -25,7 +25,7 @@ const sampleProjects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Radix UI', 'Firebase Studio', 'Genkit', 'Real-time Collaboration', 'Wiki Platform'],
     categories: ['Product Management', 'Web Development', 'AI/ML'],
     projectUrl: '#',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/JordanCJ7/FlashBoard-Wiki',
     year: 2024,
     client: 'Flashboard',
     role: 'Full Stack Developer & Product Strategist',
