@@ -18,7 +18,7 @@ import {
 const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'Flashboard Wiki - Knowledgebase',
+    title: 'Flashboard Wiki - Knowledge Base',
     description: 'Introducing Flashboard Wiki: A dynamic web app built with Next.js, TypeScript, Radix UI, Firebase Studio, and Genkit. Designed to offer a comprehensive and interactive resource for everything related to Flashboard, the platform is optimized for performance, scalability, and user experience.',
     longDescription: 'Key Features:\n- User-friendly Interface: Seamless, responsive design for easy browsing and contribution.\n- Real-time Collaboration: Users can edit and update content dynamically.\n- Comprehensive Wiki: In-depth articles, tutorials, and FAQs covering all Flashboard features.\n- Searchable Content: Fast, efficient, and robust search for quick access to information.\n\nOur goal is to provide an all-in-one hub for Flashboard users, making information and resources more accessible than ever.',
     imageUrl: '/projects/Flashboard.jpeg',
