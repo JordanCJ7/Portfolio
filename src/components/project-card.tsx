@@ -23,7 +23,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     <AnimatedElement animationClass="animate-fade-in-up" delay={delayClass}>
       <Card className="h-full flex flex-col overflow-hidden shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-card cursor-pointer group">
         <CardHeader className="p-0 relative">
-          <div className="aspect-video overflow-hidden cursor-pointer" onClick={() => setDialogOpen(true)}>
+          <div className="aspect-video overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02]" onClick={() => setDialogOpen(true)}>
             <Image
               src={project.imageUrl}
               alt={project.title}
@@ -36,7 +36,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </CardHeader>
         <CardContent className="p-6 flex-grow">
           <CardTitle
-            className="text-xl lg:text-2xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors cursor-pointer"
+            className="text-xl lg:text-2xl font-semibold mb-2 text-foreground group-hover:text-primary transition-all duration-300 cursor-pointer hover:translate-x-1"
             onClick={() => setDialogOpen(true)}
           >
             {project.title}
