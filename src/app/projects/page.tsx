@@ -18,16 +18,17 @@ import {
 const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'Flashboard Knowledge Base',
-    description: 'Led product strategy and development for a comprehensive knowledge base serving 2M+ mobile keyboard users using AI-enhanced development workflows. Leveraged GitHub Copilot for efficient code generation and implemented AI-driven content optimization features to improve user onboarding and reduce support tickets by 40%.',
+    title: 'Flashboard Wiki',
+    description: 'Introducing Flashboard Wiki: A dynamic web app built with Next.js, TypeScript, Radix UI, Firebase Studio, and Genkit. Designed to offer a comprehensive and interactive resource for everything related to Flashboard, the platform is optimized for performance, scalability, and user experience.',
+    longDescription: 'Key Features:\n- User-friendly Interface: Seamless, responsive design for easy browsing and contribution.\n- Real-time Collaboration: Users can edit and update content dynamically.\n- Comprehensive Wiki: In-depth articles, tutorials, and FAQs covering all Flashboard features.\n- Searchable Content: Fast, efficient, and robust search for quick access to information.\n\nOur goal is to provide an all-in-one hub for Flashboard users, making information and resources more accessible than ever.',
     imageUrl: '/projects/Flashboard.jpeg',
-    tags: ['Next.js', 'TypeScript', 'AI-Enhanced Development', 'GitHub Copilot', 'Product Strategy'],
+    tags: ['Next.js', 'TypeScript', 'Radix UI', 'Firebase Studio', 'Genkit', 'Real-time Collaboration', 'Wiki Platform'],
     categories: ['Product Management', 'Web Development', 'AI/ML'],
     projectUrl: '#',
     repoUrl: '#',
     year: 2024,
-    client: 'Flashboard Mobile',
-    role: 'AI-Enhanced Product Developer & Strategist',
+    client: 'Flashboard',
+    role: 'Full Stack Developer & Product Strategist',
     metrics: {
       users: '2M+ active users',
       improvement: '40% reduction in support tickets',
@@ -181,7 +182,7 @@ export default function ProjectsPage() {
     return sampleProjects.filter((project) => {
       const matchesSearch =
         project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (typeof project.description === 'string' && project.description.toLowerCase().includes(searchTerm.toLowerCase())) ||
         project.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
       
       const matchesCategory =
