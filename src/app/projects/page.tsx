@@ -170,82 +170,82 @@ const sampleProjects: Project[] = [
       feedback: 'Live previews and error handling for all fields',
     }
   },
-  {
-    id: '9',
-    title: 'E-Commerce Product Analytics Dashboard',
-    description: 'Built a comprehensive analytics dashboard to track user behavior and product performance. Led user research sessions, defined KPIs, and implemented data-driven features that increased conversion rates and improved inventory management decisions.',
-    longDescription: 'Key Features:\n- Data Visualization: Interactive charts and graphs for actionable insights.\n- KPI Tracking: Real-time monitoring of key business metrics.\n- User Research: Incorporated feedback to drive feature development.\n\nTech Stack:\n- Frontend: React\n- Data Visualization: D3.js\n- Language: JavaScript',
-    imageUrl: 'https://picsum.photos/seed/analytics/600/338',
-    tags: ['React', 'D3.js', 'Product Analytics', 'User Research', 'KPI Tracking', 'Data Visualization'],
-    categories: ['Product Management', 'Data Science', 'Web Development'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2025,
-    client: 'E-Commerce Startup',
-    role: 'Product Analyst & Frontend Developer',
-    metrics: {
-      conversion: '32% increase in conversion rate',
-      efficiency: '50% faster inventory decisions',
-      insights: '15+ actionable user insights identified'
-    }
-  },
-  {
-    id: '10',
-    title: 'Mobile App User Onboarding Optimization',
-    description: 'Redesigned user onboarding flow for a fintech mobile app through extensive user research and A/B testing. Collaborated with design and engineering teams to implement data-driven improvements that significantly reduced user drop-off rates.',
-    longDescription: 'Key Features:\n- User Research: Conducted interviews and usability tests to identify pain points.\n- A/B Testing: Validated onboarding improvements with real users.\n- Cross-functional Collaboration: Worked closely with design and engineering for seamless delivery.\n\nTech Stack:\n- Product Strategy\n- Mobile UX\n- Language: JavaScript',
-    imageUrl: 'https://picsum.photos/seed/onboarding/600/338',
-    tags: ['User Research', 'A/B Testing', 'Mobile UX', 'Product Strategy', 'Cross-functional Leadership'],
-    categories: ['Product Management', 'UX Strategy', 'Mobile App'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2025,
-    client: 'FinTech Startup',
-    role: 'Product Manager',
-    metrics: {
-      retention: '65% improvement in Day-1 retention',
-      completion: '78% onboarding completion rate',
-      satisfaction: '4.6/5 user satisfaction score'
-    }
-  },
-  {
-    id: '11',
-    title: 'Advanced Tic Tac Toe AI Game',
-    description: 'Developed a sophisticated Tic Tac Toe game with advanced AI logic using C# and .NET, enhanced by AI-assisted development tools. Utilized GitHub Copilot for efficient algorithm implementation and code optimization, creating multiple difficulty levels and strategic AI decision-making algorithms.',
-    longDescription: 'Key Features:\n- Advanced AI: Multiple difficulty levels and strategic gameplay.\n- Efficient Algorithms: Optimized for performance and challenge.\n- AI-Assisted Development: Leveraged GitHub Copilot for rapid prototyping.\n\nTech Stack:\n- Backend: C#, .NET\n- Language: C#',
-    imageUrl: 'https://picsum.photos/seed/tictactoe/600/338',
-    tags: ['C#', '.NET', 'AI Logic', 'GitHub Copilot', 'Game Development', 'Algorithm Design'],
-    categories: ['AI/ML', 'Web Development'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2025,
-    client: 'Personal Project',
-    role: 'AI-Enhanced Solo Developer',
-    metrics: {
-      complexity: 'Advanced AI with multiple difficulty levels',
-      performance: 'Optimized decision-making algorithms',
-      satisfaction: 'Engaging user experience with strategic gameplay'
-    }
-  },
-  {
-    id: '12',
-    title: 'Kotlin Todo Mobile App',
-    description: 'Built a feature-rich todo application using Kotlin to demonstrate mobile development fundamentals. Includes task management, local storage, intuitive UI/UX design, and efficient data handling showcasing mobile development capabilities.',
-    longDescription: 'Key Features:\n- Task Management: Add, edit, and delete tasks with ease.\n- Local Storage: Persistent data across sessions.\n- Mobile UI/UX: Clean and intuitive design for productivity.\n\nTech Stack:\n- Mobile: Kotlin\n- Language: Kotlin',
-    imageUrl: 'https://picsum.photos/seed/todoapp/600/338',
-    tags: ['Kotlin', 'Android Development', 'Mobile UI/UX', 'Local Storage'],
-    categories: ['Mobile App', 'UX Strategy'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2024,
-    client: 'Learning Project',
-    role: 'Mobile Developer',
-    metrics: {
-      functionality: 'Complete CRUD operations',
-      performance: 'Smooth mobile experience',
-      learning: 'Kotlin fundamentals mastery'
-    }
-  }
+  // {
+  //   id: '9',
+  //   title: 'E-Commerce Product Analytics Dashboard',
+  //   description: 'Built a comprehensive analytics dashboard to track user behavior and product performance. Led user research sessions, defined KPIs, and implemented data-driven features that increased conversion rates and improved inventory management decisions.',
+  //   longDescription: 'Key Features:\n- Data Visualization: Interactive charts and graphs for actionable insights.\n- KPI Tracking: Real-time monitoring of key business metrics.\n- User Research: Incorporated feedback to drive feature development.\n\nTech Stack:\n- Frontend: React\n- Data Visualization: D3.js\n- Language: JavaScript',
+  //   imageUrl: 'https://picsum.photos/seed/analytics/600/338',
+  //   tags: ['React', 'D3.js', 'Product Analytics', 'User Research', 'KPI Tracking', 'Data Visualization'],
+  //   categories: ['Product Management', 'Data Science', 'Web Development'],
+  //   projectUrl: '#',
+  //   repoUrl: '#',
+  //   year: 2025,
+  //   client: 'E-Commerce Startup',
+  //   role: 'Product Analyst & Frontend Developer',
+  //   metrics: {
+  //     conversion: '32% increase in conversion rate',
+  //     efficiency: '50% faster inventory decisions',
+  //     insights: '15+ actionable user insights identified'
+  //   }
+  // },
+  // {
+  //   id: '10',
+  //   title: 'Mobile App User Onboarding Optimization',
+  //   description: 'Redesigned user onboarding flow for a fintech mobile app through extensive user research and A/B testing. Collaborated with design and engineering teams to implement data-driven improvements that significantly reduced user drop-off rates.',
+  //   longDescription: 'Key Features:\n- User Research: Conducted interviews and usability tests to identify pain points.\n- A/B Testing: Validated onboarding improvements with real users.\n- Cross-functional Collaboration: Worked closely with design and engineering for seamless delivery.\n\nTech Stack:\n- Product Strategy\n- Mobile UX\n- Language: JavaScript',
+  //   imageUrl: 'https://picsum.photos/seed/onboarding/600/338',
+  //   tags: ['User Research', 'A/B Testing', 'Mobile UX', 'Product Strategy', 'Cross-functional Leadership'],
+  //   categories: ['Product Management', 'UX Strategy', 'Mobile App'],
+  //   projectUrl: '#',
+  //   repoUrl: '#',
+  //   year: 2025,
+  //   client: 'FinTech Startup',
+  //   role: 'Product Manager',
+  //   metrics: {
+  //     retention: '65% improvement in Day-1 retention',
+  //     completion: '78% onboarding completion rate',
+  //     satisfaction: '4.6/5 user satisfaction score'
+  //   }
+  // },
+  // {
+  //   id: '11',
+  //   title: 'Advanced Tic Tac Toe AI Game',
+  //   description: 'Developed a sophisticated Tic Tac Toe game with advanced AI logic using C# and .NET, enhanced by AI-assisted development tools. Utilized GitHub Copilot for efficient algorithm implementation and code optimization, creating multiple difficulty levels and strategic AI decision-making algorithms.',
+  //   longDescription: 'Key Features:\n- Advanced AI: Multiple difficulty levels and strategic gameplay.\n- Efficient Algorithms: Optimized for performance and challenge.\n- AI-Assisted Development: Leveraged GitHub Copilot for rapid prototyping.\n\nTech Stack:\n- Backend: C#, .NET\n- Language: C#',
+  //   imageUrl: 'https://picsum.photos/seed/tictactoe/600/338',
+  //   tags: ['C#', '.NET', 'AI Logic', 'GitHub Copilot', 'Game Development', 'Algorithm Design'],
+  //   categories: ['AI/ML', 'Web Development'],
+  //   projectUrl: '#',
+  //   repoUrl: '#',
+  //   year: 2025,
+  //   client: 'Personal Project',
+  //   role: 'AI-Enhanced Solo Developer',
+  //   metrics: {
+  //     complexity: 'Advanced AI with multiple difficulty levels',
+  //     performance: 'Optimized decision-making algorithms',
+  //     satisfaction: 'Engaging user experience with strategic gameplay'
+  //   }
+  // },
+  // {
+  //   id: '12',
+  //   title: 'Kotlin Todo Mobile App',
+  //   description: 'Built a feature-rich todo application using Kotlin to demonstrate mobile development fundamentals. Includes task management, local storage, intuitive UI/UX design, and efficient data handling showcasing mobile development capabilities.',
+  //   longDescription: 'Key Features:\n- Task Management: Add, edit, and delete tasks with ease.\n- Local Storage: Persistent data across sessions.\n- Mobile UI/UX: Clean and intuitive design for productivity.\n\nTech Stack:\n- Mobile: Kotlin\n- Language: Kotlin',
+  //   imageUrl: 'https://picsum.photos/seed/todoapp/600/338',
+  //   tags: ['Kotlin', 'Android Development', 'Mobile UI/UX', 'Local Storage'],
+  //   categories: ['Mobile App', 'UX Strategy'],
+  //   projectUrl: '#',
+  //   repoUrl: '#',
+  //   year: 2024,
+  //   client: 'Learning Project',
+  //   role: 'Mobile Developer',
+  //   metrics: {
+  //     functionality: 'Complete CRUD operations',
+  //     performance: 'Smooth mobile experience',
+  //     learning: 'Kotlin fundamentals mastery'
+  //   }
+  // }
 ];
 
 const allCategories: Category[] = [
