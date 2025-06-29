@@ -12,6 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { useToast } from '@/hooks/use-toast';
 import { Send, Loader2, Mail, Phone, MapPin } from 'lucide-react';
 import AnimatedElement from '@/components/animated-element';
+import ChatWidget from '@/components/chat-widget';
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -178,6 +179,7 @@ export default function ContactPage() {
           </div>
         </AnimatedElement>
       </div>
+      <ChatWidget />
     </SectionWrapper>
   );
 }
