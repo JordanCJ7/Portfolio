@@ -98,7 +98,7 @@ const sampleProjects: Project[] = [
     title: 'Tic-Tac-Toe Game – WPF Desktop App',
     description: 'A modern, feature-rich desktop implementation of Tic-Tac-Toe built in C# with WPF. Supports multiple board sizes, dynamic game modes, and a smart AI with varying difficulty levels. Designed for both casual and competitive players, with a polished UI and extensible architecture.',
     longDescription: 'Key Features:\n- Player vs Player and Player vs AI modes\n- Multiple board sizes: 3x3, 4x4, 5x5, 6x6\n- Customizable win conditions per grid size\n- Classic and Timed game modes\n- Real-time move timers and time-based tiebreakers\n- Three AI difficulty levels: Easy, Medium, Hard\n- Responsive WPF UI and post-game statistics\n\nTech Stack:\n- Framework: .NET 9.0\n- UI: Windows Presentation Foundation (WPF)\n- Language: C#\n- Architecture: MVVM\n- Build Tools: MSBuild, dotnet CLI\n- Version Control: Git',
-    imageUrl: '/projects/TicTacToe.png',
+    imageUrl: 'https://picsum.photos/seed/tictactoe1/600/338',
     tags: ['C#', 'WPF', '.NET 9.0', 'MVVM', 'UI/UX Design', 'Game Development', 'Desktop Applications'],
     categories: ['Desktop App', 'Game Development'],
     projectUrl: '',
