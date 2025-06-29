@@ -40,7 +40,7 @@ const sampleProjects: Project[] = [
     title: 'FoodieFly - Food Delivery System',
     description: 'Led a university project group to build FoodieFly, a modern, cloud-native food ordering and delivery system built with microservices architecture. It provides a seamless experience for customers to order food, restaurants to manage their menus, and delivery personnel to handle deliveries efficiently.',
     longDescription: 'Key Features:\n- Microservices Architecture: Implemented using Docker and Node.js to ensure scalability and maintainability.\n- User Authentication & Authorization: Utilized JWT tokens for secure user registration and login.\n- Restaurant Management: Enabled restaurants to manage their menus and orders efficiently.\n- Order & Delivery Management: Facilitated seamless order processing and delivery tracking.\n- Payment Integration: Integrated payment gateways for secure transactions.\n- Admin Dashboard: Provided an admin interface for monitoring and managing the system.\n\nTech Stack:\n- Frontend: React\n- Backend: Node.js, Express, MongoDB\n- Authentication: JWT, Passport.js\n- Containerization: Docker\n- Language: JavaScript',
-    imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
+    imageUrl: '/projects/FoodieFly.png',
     tags: ['Team Leadership', 'Web Development', 'Project Management', 'Microservices', 'Collaboration & Productivity', 'Version Control', 'MERN Stack'],
     categories: ['Web Development', 'System Design', 'Product Management'],
     // projectUrl: '#',
