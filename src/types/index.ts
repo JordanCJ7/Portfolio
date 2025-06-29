@@ -4,6 +4,8 @@ export interface Category {
 }
 
 export interface ProjectMetrics {
+  [key: string]: string | undefined;
+  // Optionally, keep standard keys for autocomplete/documentation:
   users?: string;
   improvement?: string;
   engagement?: string;
