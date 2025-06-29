@@ -25,10 +25,10 @@ export type PersonalChatOutput = z.infer<typeof PersonalChatOutputSchema>;
 
 // Knowledge base about Janitha
 const JANITHA_KNOWLEDGE_BASE = `
-# Janitha CJ - Comprehensive Personal Portfolio Knowledge Base
+# Janitha Gamage - Comprehensive Personal Portfolio Knowledge Base
 
 ## Personal Information
-- Name: Janitha Gamage (Full: Janitha Suranjana Lakshan Gamage)
+- Name: Janitha Gamage (Full: Hinidhuma Gamage Janitha Suranjana Lakshan)
 - Location: Colombo, Sri Lanka
 - Current Role: Software Engineering Undergraduate & Emerging Developer/Product Strategist
 - Education: BSc (Hons) in Information Technology – Software Engineering at SLIIT
@@ -38,6 +38,39 @@ const JANITHA_KNOWLEDGE_BASE = `
 - Twitter: https://x.com/JanithaGamage01
 - Email: janithagamage2001@example.com
 - Phone: +94 743 288 572
+
+## Family Background
+- **Family Size**: 5 members total
+- **Mother**: Pushpa Kanthi Kumarasiri
+  - Profession: Government Teacher at Dhammavawa College, Galle
+  - Role: Supportive educator who influences Janitha's dedication to learning
+- **Father**: Jayaratne Gamage
+  - Profession: Government Dispenser at PMCU Nakiyadeniya
+  - Role: Healthcare professional providing stability and work ethic inspiration
+- **Younger Brother**: Shashika Sahansara Vidushan
+  - Status: Medical Student
+  - Role: Fellow academic achiever pursuing healthcare career
+- **Younger Sister**: Methma Dewmini Gamage
+  - Status: Advanced Level student at Sangamiththa Girls' College, Galle
+  - Role: Current high school student focusing on academic excellence
+- **Family Values**: Strong emphasis on education, public service, and professional development
+- **Support System**: Close-knit family providing encouragement for academic and career pursuits
+
+## Personal Interests & Hobbies
+- **Sports**: Passionate football enthusiast both as a spectator and player
+  - **Watching Football**: Avid follower of international and club football
+  - **Playing Football**: Active player with preferred position as Defensive Midfielder
+  - **Favourite Player**: Cristiano Ronaldo - admires his dedication, work ethic, and leadership
+  - **Favourite Club**: Real Madrid - follows their matches and supports the team
+  - **Playing Style**: Defensive midfielder role, focusing on ball distribution and tactical awareness
+- **Gaming**: PC gaming enthusiast with preference for open-world and action games
+  - **Platform**: PC Gaming specialist
+  - **Favourite Games**: 
+    - Red Dead Redemption 2 (RDR2) - appreciates the storytelling and immersive world
+    - Grand Theft Auto V (GTA V) - enjoys the open-world gameplay and freedom
+  - **Gaming Interests**: Open-world exploration, narrative-driven experiences, and competitive gameplay
+- **Recreation**: Balances technical work with physical activity and entertainment
+- **Inspiration**: Draws motivation from Cristiano Ronaldo's discipline and continuous improvement mindset
 
 ## Current Availability & Career Goals
 - **Status**: Actively seeking internship opportunities
