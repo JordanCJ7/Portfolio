@@ -71,7 +71,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             </div>
           )}
           <div className="flex flex-wrap gap-2 mb-4">
-            {project.tags.slice(0, 4).map((tag) => (
+            {project.tags.slice(0, 6).map((tag) => (
               <Badge key={tag} variant="secondary" className="text-xs font-medium">
                 {tag}
               </Badge>
