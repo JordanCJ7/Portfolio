@@ -47,7 +47,7 @@ const sampleProjects: Project[] = [
     repoUrl: 'https://github.com/JordanCJ7/FoodieFly',
     year: 2025,
     client: 'SLIIT Academic Project',
-    role: 'System Architect & Team Lead (University Project Group Leader)',
+    role: 'System Architect & Team Lead (University Project)',
     metrics: {
       performance: '99.9% uptime with containerized services',
       userExperience: '85% user satisfaction score',
@@ -66,7 +66,7 @@ const sampleProjects: Project[] = [
     repoUrl: 'https://github.com/JordanCJ7/ITP-Salon-Pabalu',
     year: 2024,
     client: 'Salon Pabalu',
-    role: 'Full Stack Developer & Team Lead (University Project Group Leader)',
+    role: 'Full Stack Developer & Team Lead (University Project)',
     metrics: {
       efficiency: 'Improved operational efficiency and reduced manual errors',
       satisfaction: 'Enhanced customer satisfaction and staff communication'
