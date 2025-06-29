@@ -37,6 +37,14 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Bundle analyzer in development
   webpack: (config, { dev, isServer }) => {
+    // Handle module resolution issues in Vercel
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+      crypto: false,
+    };
+    
     if (dev && !isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
