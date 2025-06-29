@@ -4,6 +4,7 @@ import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import AnimatedElement from '@/components/animated-element';
+import ChatWidget from '@/components/chat-widget';
 import Image from 'next/image';
 import { 
   GraduationCap, 
@@ -443,6 +444,9 @@ export default function EducationPage() {
           </Card>
         </AnimatedElement>
       </div>
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </SectionWrapper>
   );
 }
