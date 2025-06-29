@@ -1,7 +1,16 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Performance optimizations */
+  experimental: {
+    optimizePackageImports: [
+      'lucide-react', 
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-dropdown-menu',
+      '@radix-ui/react-sheet',
+      'framer-motion'
+    ]
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,6 +18,10 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,6 +30,26 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  // Enable static optimization
+  trailingSlash: false,
+  compress: true,
+  poweredByHeader: false,
+  // Bundle analyzer in development
+  webpack: (config, { dev, isServer }) => {
+    if (dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        },
+      };
+    }
+    return config;
   },
 };
 
