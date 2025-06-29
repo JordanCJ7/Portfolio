@@ -1,7 +1,7 @@
 {
   "framework": "nextjs",
   "env": {
-    "GEMINI_RPM_LIMIT": "5",
+    "GEMINI_RPM_LIMIT": "5", 
     "GEMINI_RPD_LIMIT": "20"
   }
 }
