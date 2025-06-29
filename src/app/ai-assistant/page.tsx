@@ -157,10 +157,10 @@ export default function PersonalAIPage() {
                 <Bot className="mr-3 h-8 w-8 text-primary animate-pulse" />
                 <Sparkles className="absolute -top-1 -right-1 h-4 w-4 text-yellow-500 animate-bounce" />
               </div>
-              Janitha's AI Assistant
+              Janitha&apos;s AI Assistant
             </CardTitle>
             <CardDescription className="text-base">
-              I'm here to answer questions about Janitha's portfolio, projects, achievements, and technical expertise.
+              I&apos;m here to answer questions about Janitha&apos;s portfolio, projects, achievements, and technical expertise.
               <br />
               <span className="text-xs text-muted-foreground mt-1 block">
                 Rate limits apply to ensure optimal performance within free tier
@@ -281,7 +281,7 @@ export default function PersonalAIPage() {
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground mt-2 text-center">
-                I specialize in Janitha's portfolio. Ask about his projects, technologies, achievements, or experience!
+                I specialize in Janitha&apos;s portfolio. Ask about his projects, technologies, achievements, or experience!
               </p>
             </div>
           </CardContent>
