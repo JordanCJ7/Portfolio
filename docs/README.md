@@ -7,6 +7,8 @@ This folder contains comprehensive documentation for Janitha Gamage's Portfolio 
 ### 🎯 **Core Documentation**
 - **[blueprint.md](./blueprint.md)** - Original project blueprint and design guidelines
 - **[KNOWLEDGE_BASE_ENHANCEMENT.md](./KNOWLEDGE_BASE_ENHANCEMENT.md)** - AI knowledge base improvement analysis
+- **[PERFORMANCE_MONITORING.md](./PERFORMANCE_MONITORING.md)** - Complete performance monitoring system guide
+- **[LOADING_BUFFER_SYSTEM.md](./LOADING_BUFFER_SYSTEM.md)** - Modern loading indicators and UX enhancements
 
 ### 🤖 **AI Setup & Configuration** (`ai-setup/`)
 - **[AI_COST_GUIDE.md](./ai-setup/AI_COST_GUIDE.md)** - Complete guide to zero-cost AI usage with Google Gemini
@@ -19,6 +21,8 @@ This folder contains comprehensive documentation for Janitha Gamage's Portfolio 
 - [How to set up AI features](./ai-setup/FREE_TIER_SETUP.md) - Get started with the AI assistant
 - [Cost management](./ai-setup/AI_COST_GUIDE.md) - Stay within free tier limits
 - [Local development](./ai-setup/OLLAMA_ANALYSIS.md) - Use Ollama for offline development
+- [Performance monitoring](./PERFORMANCE_MONITORING.md) - Track and optimize application performance
+- [Loading buffer system](./LOADING_BUFFER_SYSTEM.md) - Modern loading indicators and smooth transitions
 
 ### For Portfolio Visitors
 - [Project overview](../README.md) - Main project documentation
