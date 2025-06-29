@@ -4,22 +4,25 @@ import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import AnimatedElement from '@/components/animated-element';
-import ChatWidget from '@/components/chat-widget';
 import Image from 'next/image';
 import { 
   GraduationCap, 
   Award, 
   BookOpen, 
   Calendar,
-  ExternalLink,
   CheckCircle,
   Clock,
   Bot,
   Users
 } from 'lucide-react';
 import CertificationCard from '@/components/ui/certification-card';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, lazy, Suspense } from 'react';
+import { performanceMonitor, measureAsync } from '@/lib/performance';
 
+// Lazy load ChatWidget for better initial page performance
+const ChatWidget = lazy(() => import('@/components/chat-widget'));
+
+// Memoized certification data to prevent unnecessary re-calculations
 const certifications = [
   {
     name: "Microsoft Azure Fundamentals AZ-900",
@@ -119,7 +122,7 @@ const certifications = [
     color: "bg-green-500/10 text-green-500"
   },
   {
-    name: "MS Azure Fundamentals: Describe Azure architecture and services",
+    name: "MS Azure Fundamentals: Describe Azure management and governance",
     status: "completed",
     description: "Explored Azure management, governance, and best practices for cloud administration.",
     provider: "Microsoft Learn",
@@ -144,18 +147,72 @@ const readinessSkills = [
 ];
 
 export default function EducationPage() {
-  // Carousel logic for certifications
+  // Enhanced carousel logic with performance optimizations
   const CARDS_PER_PAGE = 6;
   const [currentPage, setCurrentPage] = useState(0);
-  const totalPages = Math.ceil(certifications.length / CARDS_PER_PAGE);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
+  // Memoize computed values
+  const totalPages = useMemo(() => Math.ceil(certifications.length / CARDS_PER_PAGE), []);
+  
+  // Memoize paginated certifications
+  const paginatedCertifications = useMemo(() => {
+    return Array.from({ length: totalPages }).map((_, pageIdx) => {
+      const pageStartIdx = pageIdx * CARDS_PER_PAGE;
+      return certifications.slice(pageStartIdx, pageStartIdx + CARDS_PER_PAGE);
+    });
+  }, [totalPages]);
+
+  // Optimized carousel navigation with performance monitoring
+  const handlePageChange = useCallback(async (newPage: number) => {
+    await measureAsync(async () => {
+      setCurrentPage(newPage);
+    }, `Certification carousel page change to ${newPage}`);
+  }, []);
+
+  // Enhanced auto-play with intersection observer
   useEffect(() => {
-    if (totalPages <= 1) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    const certificationSection = document.querySelector('[data-certification-carousel]');
+    if (certificationSection) {
+      observer.observe(certificationSection);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Auto-play timer with optimizations
+  useEffect(() => {
+    if (totalPages <= 1 || !isAutoPlaying || !isVisible) return;
+    
     const timer = setInterval(() => {
       setCurrentPage((prev) => (prev + 1) % totalPages);
     }, 4000);
+    
     return () => clearInterval(timer);
-  }, [totalPages]);
+  }, [totalPages, isAutoPlaying, isVisible]);
+
+  // Pause auto-play on user interaction
+  const handleUserInteraction = useCallback(() => {
+    setIsAutoPlaying(false);
+    // Resume after 10 seconds of inactivity
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  }, []);
+
+  // Performance monitoring on mount
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      performanceMonitor.logMetrics();
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <SectionWrapper
@@ -188,6 +245,7 @@ export default function EducationPage() {
                             width={384}
                             height={384}
                             className="w-full h-full object-contain"
+                            priority
                             onError={(e) => {
                               e.currentTarget.style.display = 'none';
                               const fallback = e.currentTarget.nextElementSibling as HTMLElement | null;
@@ -209,11 +267,6 @@ export default function EducationPage() {
                         <p className="text-sm text-muted-foreground mt-1">
                           Specializing in AI-driven development, full-stack technologies, and product management methodologies
                         </p>
-                        <div className="mt-2 flex flex-wrap gap-2">
-                          {/* <Badge variant="secondary" className="text-xs">
-                            Current GPA: [Your GPA]
-                          </Badge> */}
-                        </div>
                       </div>
                     </div>
                     <div className="flex flex-col gap-2 items-end text-right">
@@ -261,11 +314,6 @@ export default function EducationPage() {
                         <p className="text-sm text-muted-foreground mt-1">
                           Focus on Biological Science, Physics, and Chemistry
                         </p>
-                        <div className="mt-2 flex flex-wrap gap-2">
-                          {/* <Badge variant="secondary" className="text-xs">
-                            Final Grade: [Your Grade/Percentage]
-                          </Badge> */}
-                        </div>
                       </div>
                     </div>
                     <div className="flex flex-col gap-2 items-end text-right">
@@ -306,7 +354,7 @@ export default function EducationPage() {
           </Card>
         </AnimatedElement>
 
-        {/* Certifications Section */}
+        {/* Enhanced Certifications Section */}
         <AnimatedElement animationClass="animate-fade-in-up" delay="delay-200">
           <Card className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
             <CardHeader>
@@ -318,7 +366,12 @@ export default function EducationPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="relative overflow-hidden">
+              <div 
+                className="relative overflow-hidden"
+                data-certification-carousel
+                onMouseEnter={handleUserInteraction}
+                onTouchStart={handleUserInteraction}
+              >
                 <div 
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ 
@@ -326,29 +379,24 @@ export default function EducationPage() {
                     width: `${totalPages * 100}%`
                   }}
                 >
-                  {Array.from({ length: totalPages }).map((_, pageIdx) => {
-                    const pageStartIdx = pageIdx * CARDS_PER_PAGE;
-                    const pageCerts = certifications.slice(pageStartIdx, pageStartIdx + CARDS_PER_PAGE);
-                    
-                    return (
-                      <div 
-                        key={pageIdx}
-                        className="flex-shrink-0"
-                        style={{ width: `${100 / totalPages}%` }}
-                      >
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                          {pageCerts.map((cert, certIndex) => (
-                            <div
-                              key={`${pageIdx}-${certIndex}-${cert.name}-${cert.date}-${cert.provider}`}
-                              className="transform transition-all duration-300 hover:scale-105"
-                            >
-                              <CertificationCard {...cert} />
-                            </div>
-                          ))}
-                        </div>
+                  {paginatedCertifications.map((pageCerts, pageIdx) => (
+                    <div 
+                      key={pageIdx}
+                      className="flex-shrink-0"
+                      style={{ width: `${100 / totalPages}%` }}
+                    >
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {pageCerts.map((cert, certIndex) => (
+                          <div
+                            key={`${pageIdx}-${certIndex}-${cert.name}`}
+                            className="transform transition-all duration-300 hover:scale-105"
+                          >
+                            <CertificationCard {...cert} />
+                          </div>
+                        ))}
                       </div>
-                    );
-                  })}
+                    </div>
+                  ))}
                 </div>
               </div>
               {totalPages > 1 && (
@@ -360,7 +408,7 @@ export default function EducationPage() {
                         idx === currentPage ? 'bg-accent shadow-lg' : 'bg-muted hover:bg-accent/50'
                       }`}
                       aria-label={`Go to page ${idx + 1}`}
-                      onClick={() => setCurrentPage(idx)}
+                      onClick={() => handlePageChange(idx)}
                     />
                   ))}
                 </div>
@@ -417,21 +465,21 @@ export default function EducationPage() {
             <CardContent>
               <div className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="text-center p-4 border rounded-lg">
+                  <div className="text-center p-4 border rounded-lg hover:shadow-md transition-shadow duration-200">
                     <Bot className="h-8 w-8 text-primary mx-auto mb-2" />
                     <h4 className="font-semibold text-sm">AI & Development</h4>
                     <p className="text-xs text-muted-foreground mt-1">
                       Staying current with AI tools and development practices
                     </p>
                   </div>
-                  <div className="text-center p-4 border rounded-lg">
+                  <div className="text-center p-4 border rounded-lg hover:shadow-md transition-shadow duration-200">
                     <Award className="h-8 w-8 text-accent mx-auto mb-2" />
                     <h4 className="font-semibold text-sm">Cloud Technologies</h4>
                     <p className="text-xs text-muted-foreground mt-1">
                       Advancing Azure and cloud architecture knowledge
                     </p>
                   </div>
-                  <div className="text-center p-4 border rounded-lg">
+                  <div className="text-center p-4 border rounded-lg hover:shadow-md transition-shadow duration-200">
                     <Users className="h-8 w-8 text-green-500 mx-auto mb-2" />
                     <h4 className="font-semibold text-sm">Leadership Skills</h4>
                     <p className="text-xs text-muted-foreground mt-1">
@@ -445,8 +493,10 @@ export default function EducationPage() {
         </AnimatedElement>
       </div>
       
-      {/* Chat Widget */}
-      <ChatWidget />
+      {/* Lazy-loaded Chat Widget */}
+      <Suspense fallback={<div className="h-20 animate-pulse bg-muted/20 rounded-lg" />}>
+        <ChatWidget />
+      </Suspense>
     </SectionWrapper>
   );
 }
