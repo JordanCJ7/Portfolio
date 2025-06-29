@@ -41,7 +41,7 @@ const sampleProjects: Project[] = [
     description: 'Led a university project group to build FoodieFly, a modern, cloud-native food ordering and delivery system built with microservices architecture. It provides a seamless experience for customers to order food, restaurants to manage their menus, and delivery personnel to handle deliveries efficiently.',
     longDescription: 'Key Features:\n- Microservices Architecture: Implemented using Docker and Node.js to ensure scalability and maintainability.\n- User Authentication & Authorization: Utilized JWT tokens for secure user registration and login.\n- Restaurant Management: Enabled restaurants to manage their menus and orders efficiently.\n- Order & Delivery Management: Facilitated seamless order processing and delivery tracking.\n- Payment Integration: Integrated payment gateways for secure transactions.\n- Admin Dashboard: Provided an admin interface for monitoring and managing the system.\n\nTechnologies Used:\n- Frontend: React\n- Backend: Node.js, Express, MongoDB\n- Authentication: JWT, Passport.js\n- Containerization: Docker\n- GitHub',
     imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
-    tags: ['Web Development', 'JavaScript', 'Project Management', 'Microservices', 'Docker', 'Collaboration & Productivity', 'Version Control', 'MERN Stack'],
+    tags: ['Web Development', 'JavaScript', 'Project Management', 'Microservices', 'Docker', 'Collaboration & Productivity', 'Version Control', 'MERN Stack', 'Team Leadership'],
     categories: ['Web Development', 'System Design', 'Product Management'],
     // projectUrl: '#',
     repoUrl: 'https://github.com/JordanCJ7/FoodieFly',
@@ -56,21 +56,20 @@ const sampleProjects: Project[] = [
   },
   {
     id: '3',
-    title: 'Salon Pabalu Management System',
-    description: 'Led a cross-functional team of university colleagues to design and develop a comprehensive salon management solution. Managed stakeholder requirements, guided team through technical challenges, and implemented data-driven features using effective PM tools and methodologies.',
-    longDescription: 'Key Features:\n- Appointment Scheduling: Streamlined booking and calendar management.\n- Customer Management: Centralized customer profiles and history.\n- Reporting: Data-driven insights for business growth.\n- Automation: Reduced manual processes for efficiency.\n\nThis project improved operational efficiency and customer retention for the client.',
+    title: 'Salon Pabalu: Web-Based Salon Management System',
+    description: 'Salon Pabalu, a renowned beauty and wellness center in Mahiyanganaya, partnered with us to develop an advanced, web-based Salon Management System to streamline operations and enhance customer experiences. Built using the MERN stack, the system automates essential processes including user account management, appointment scheduling, inventory tracking, service management, employee management, and customer relationship management.',
+    longDescription: 'Key Features:\n- User Account Management: Secure user profiles with role-based access control.\n- Appointment & Scheduling: Online booking with automated reminders and conflict resolution.\n- Service & Product Management: Easy tracking of available services and products, including pricing and inventory.\n- Employee Management: Streamlined leave requests, shift management, and performance tracking.\n- Customer Feedback: Integrated feedback system to improve service quality.\n- Gift Voucher Management: Creation and tracking of customized gift vouchers.\n\nOur system is designed to improve efficiency, reduce errors, and enhance customer satisfaction and operational performance. Salon Pabalu now benefits from a reliable, scalable solution that positions them for future growth and success in the competitive beauty and wellness industry.',
     imageUrl: 'https://picsum.photos/seed/salon/600/338',
-    tags: ['MERN Stack', 'Team Leadership', 'Requirements Management', 'Project Management'],
-    categories: ['Product Management', 'Web Development'],
-    projectUrl: '#',
-    repoUrl: '#',
-    year: 2025,
+    tags: ['Web Development', 'JavaScript', 'Project Management', 'Collaboration & Productivity', 'Version Control', 'MERN Stack', 'Team Leadership', 'Requirements Engineering'],
+    categories: ['Web Development', 'Product Management'],
+    // projectUrl: '#',
+    repoUrl: 'https://github.com/JordanCJ7/ITP-Salon-Pabalu',
+    year: 2024,
     client: 'Salon Pabalu',
-    role: 'Team Lead & Product Owner',
+    role: 'Full Stack Developer & Team Lead (University Project Group Leader)',
     metrics: {
-      efficiency: '30% improvement in booking efficiency',
-      revenue: '25% increase in customer retention',
-      automation: 'Automated 80% of manual processes'
+      efficiency: 'Improved operational efficiency and reduced manual errors',
+      satisfaction: 'Enhanced customer satisfaction and staff communication'
     }
   },
   {
