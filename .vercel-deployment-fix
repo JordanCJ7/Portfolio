@@ -1,0 +1,13 @@
+# Vercel Deployment Fix
+# This file forces a fresh deployment to resolve module resolution issues
+# Created: June 29, 2025
+
+All required files are present:
+- src/ai/flows/personal-chat.ts ✓
+- src/components/section-wrapper.tsx ✓
+- src/components/ui/card.tsx ✓
+- src/components/ui/button.tsx ✓
+- src/components/ui/input.tsx ✓
+- src/components/ui/chat-bubble.tsx ✓
+
+Build works locally, triggering fresh deployment.
