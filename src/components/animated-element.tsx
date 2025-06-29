@@ -25,12 +25,14 @@ export default function AnimatedElement({
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const element = ref.current; // Capture ref value at start
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          if (once && ref.current) { // Check ref.current before disconnecting
-            observer.unobserve(ref.current);
+          if (once && element) { 
+            observer.unobserve(element);
           }
         } else {
           if (!once) {
@@ -41,13 +43,13 @@ export default function AnimatedElement({
       { threshold }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (ref.current) { // Check ref.current before disconnecting
-        observer.unobserve(ref.current);
+      if (element) { 
+        observer.unobserve(element);
       }
       observer.disconnect();
     };
