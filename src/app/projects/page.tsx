@@ -56,7 +56,7 @@ const sampleProjects: Project[] = [
   },
   {
     id: '3',
-    title: 'NobleTrust Insurance Website',
+    title: 'NobleTrust - Modern Insurance Website',
     description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
     longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript\n- Language: JavaScript',
     imageUrl: '/projects/NobleTrust.png',
