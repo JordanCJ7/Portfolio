@@ -126,8 +126,8 @@ const sampleProjects: Project[] = [
     role: 'Frontend Developer',
     metrics: {
       performance: 'Responsive design for all devices',
+      testing: 'Tested with Jest and React Testing Library',
       api: 'REST Countries API integration',
-      testing: 'Tested with Jest and React Testing Library'
     }
   },
   {
