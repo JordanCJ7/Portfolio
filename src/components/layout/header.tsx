@@ -14,7 +14,7 @@ const navItems = [
   { href: '/projects', label: 'Projects', icon: Layers },
   { href: '/skills', label: 'Skills', icon: Brain },
   { href: '/education', label: 'Education', icon: GraduationCap },
-  { href: '/ai-assistant', label: 'AI Assistant', icon: Sparkles },
+  { href: '/ai-assistant', label: 'Ask About Janitha', icon: Sparkles },
   { href: '/contact', label: 'Contact', icon: Mail },
 ];
 
