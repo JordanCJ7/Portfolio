@@ -16,6 +16,7 @@
     "perf:dev": "npm run dev & sleep 5 && npm run perf:audit"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@genkit-ai/googleai": "^1.8.0",
     "@genkit-ai/next": "^1.8.0",
     "@hookform/resolvers": "^4.1.3",
