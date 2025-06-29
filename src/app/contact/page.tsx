@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { Send, Loader2, Mail, Phone, MapPin } from 'lucide-react';
+import { Send, Loader2, Mail, MapPin } from 'lucide-react';
 import AnimatedElement from '@/components/animated-element';
 import ChatWidget from '@/components/chat-widget';
 
@@ -49,11 +49,11 @@ export default function ContactPage() {
   };
   return (
     <SectionWrapper
-      title="Let's Connect - Open for Internships"
+      title="Let&apos;s Connect - Open for Internships"
       subtitle={
         <div className="max-w-xl mx-auto">
-          I'm actively seeking internship opportunities where I can contribute as a Developer, Product Strategist, or both. <br />
-          Let's discuss how I can add value to your team while learning and growing professionally.
+          I&apos;m actively seeking internship opportunities where I can contribute as a Developer, Product Strategist, or both. <br />
+          Let&apos;s discuss how I can add value to your team while learning and growing professionally.
         </div>
       }
     >
