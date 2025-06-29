@@ -151,6 +151,25 @@ const sampleProjects: Project[] = [
   },
   {
     id: '8',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript\n- Language: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
+    id: '9',
     title: 'E-Commerce Product Analytics Dashboard',
     description: 'Built a comprehensive analytics dashboard to track user behavior and product performance. Led user research sessions, defined KPIs, and implemented data-driven features that increased conversion rates and improved inventory management decisions.',
     longDescription: 'Key Features:\n- Data Visualization: Interactive charts and graphs for actionable insights.\n- KPI Tracking: Real-time monitoring of key business metrics.\n- User Research: Incorporated feedback to drive feature development.\n\nTech Stack:\n- Frontend: React\n- Data Visualization: D3.js\n- Language: JavaScript',
@@ -169,7 +188,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '9',
+    id: '10',
     title: 'Mobile App User Onboarding Optimization',
     description: 'Redesigned user onboarding flow for a fintech mobile app through extensive user research and A/B testing. Collaborated with design and engineering teams to implement data-driven improvements that significantly reduced user drop-off rates.',
     longDescription: 'Key Features:\n- User Research: Conducted interviews and usability tests to identify pain points.\n- A/B Testing: Validated onboarding improvements with real users.\n- Cross-functional Collaboration: Worked closely with design and engineering for seamless delivery.\n\nTech Stack:\n- Product Strategy\n- Mobile UX\n- Language: JavaScript',
@@ -188,7 +207,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '10',
+    id: '11',
     title: 'Advanced Tic Tac Toe AI Game',
     description: 'Developed a sophisticated Tic Tac Toe game with advanced AI logic using C# and .NET, enhanced by AI-assisted development tools. Utilized GitHub Copilot for efficient algorithm implementation and code optimization, creating multiple difficulty levels and strategic AI decision-making algorithms.',
     longDescription: 'Key Features:\n- Advanced AI: Multiple difficulty levels and strategic gameplay.\n- Efficient Algorithms: Optimized for performance and challenge.\n- AI-Assisted Development: Leveraged GitHub Copilot for rapid prototyping.\n\nTech Stack:\n- Backend: C#, .NET\n- Language: C#',
@@ -207,7 +226,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '11',
+    id: '12',
     title: 'Kotlin Todo Mobile App',
     description: 'Built a feature-rich todo application using Kotlin to demonstrate mobile development fundamentals. Includes task management, local storage, intuitive UI/UX design, and efficient data handling showcasing mobile development capabilities.',
     longDescription: 'Key Features:\n- Task Management: Add, edit, and delete tasks with ease.\n- Local Storage: Persistent data across sessions.\n- Mobile UI/UX: Clean and intuitive design for productivity.\n\nTech Stack:\n- Mobile: Kotlin\n- Language: Kotlin',
