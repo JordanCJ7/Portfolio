@@ -46,8 +46,8 @@ const sampleProjects: Project[] = [
     // projectUrl: '#',
     repoUrl: 'https://github.com/JordanCJ7/FoodieFly',
     year: 2025,
-    client: 'SLIIT',
-    role: 'Team Lead & System Architect (University Project Group Leader)',
+    client: 'SLIIT Academic Project',
+    role: 'Team Lead & (University Project Group Leader)',
     metrics: {
       performance: '99.9% uptime with containerized services',
       userExperience: '85% user satisfaction score',
