@@ -203,12 +203,19 @@ The portfolio features an advanced AI assistant powered by Google Gemini with a 
    # Required for AI assistant features
    GOOGLE_API_KEY=your_google_ai_api_key_here
    
+   # Required for contact form functionality
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_emailjs_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+   
    # Optional: Rate limiting (defaults provided)
    GEMINI_RPM_LIMIT=5    # Requests per minute
    GEMINI_RPD_LIMIT=20   # Requests per day
    ```
    
-   Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+   **Setup Instructions:**
+   - AI Assistant: Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+   - Contact Form: Follow the [EmailJS Setup Guide](./docs/EMAILJS_SETUP.md) for free tier configuration
 
 ### 🚀 Development
 
