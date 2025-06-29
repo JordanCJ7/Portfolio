@@ -31,9 +31,13 @@ export default function SectionWrapper({
               </h2>
             )}
             {subtitle && (
-              <p className={cn('text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto', subtitleClassName)}>
-                {subtitle}
-              </p>
+              typeof subtitle === 'string' ? (
+                <p className={cn('text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto', subtitleClassName)}>
+                  {subtitle}
+                </p>
+              ) : (
+                subtitle
+              )
             )}
           </div>
         )}
