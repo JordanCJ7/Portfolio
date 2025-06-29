@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import SectionWrapper from '@/components/section-wrapper';
 import AnimatedElement from '@/components/animated-element';
+import ChatWidget from '@/components/chat-widget';
 import { ArrowRight, Download, Briefcase, Award, Code, Cloud, Target, Bot } from 'lucide-react';
 
 export default function HomePage() {
@@ -89,6 +90,9 @@ export default function HomePage() {
           <div className="absolute -top-4 -left-4 w-16 h-16 bg-accent rounded-lg opacity-20 group-hover:opacity-40 transition-opacity duration-300 transform rotate-45"></div>
         </AnimatedElement>
       </div>
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </SectionWrapper>
   );
 }
