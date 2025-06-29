@@ -1,9 +1,16 @@
 // @/components/layout/footer.tsx
+"use client";
+
 import { Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(2025); // Default fallback
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="border-t border-border/40 bg-background/95 py-8">
