@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import type { Project, Category } from '@/types';
 import ProjectCard from '@/components/project-card';
 import SectionWrapper from '@/components/section-wrapper';
+import ChatWidget from '@/components/chat-widget';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search, Filter } from 'lucide-react';
@@ -323,6 +324,9 @@ export default function ProjectsPage() {
           </Button>
         </div>
       )}
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </SectionWrapper>
   );
 }
