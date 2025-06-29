@@ -346,4 +346,5 @@ This project is open-source and available under the MIT License.
 This portfolio represents the culmination of modern web development practices, AI integration, and performance optimization. It showcases not just projects and skills, but also demonstrates proficiency with cutting-edge technologies and development workflows.
 
 **Built with ❤️ by Janitha Gamage** - A passionate developer ready to contribute to innovative projects and learn from experienced professionals.
-```
+```#   F o r c e   d e p l o y m e n t   -   0 6 / 2 9 / 2 0 2 5   2 0 : 5 9 : 3 7  
+ 
