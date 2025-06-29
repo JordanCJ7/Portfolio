@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import SectionWrapper from '@/components/section-wrapper';
 import AnimatedElement from '@/components/animated-element';
 import ChatWidget from '@/components/chat-widget';
-import { ArrowRight, Download, Briefcase, Award, Code, Cloud, Target, Bot } from 'lucide-react';
+import { ArrowRight, Download, Briefcase, Award, Cloud, Target, Bot } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -19,7 +19,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
-            A passionate Software Engineering Undergraduate and emerging Developer & Product Strategist seeking internship opportunities. Specializing in <strong>AI-driven development, JavaScript/TypeScript, React, Node.js</strong>, and <strong>cloud technologies (Azure)</strong>, I leverage AI tools like GitHub Copilot to enhance development efficiency and code quality. I've successfully led multiple university project teams using microservices architecture and modern AI-assisted development practices, while managing products serving 2M+ users.
+            A passionate Software Engineering Undergraduate and emerging Developer & Product Strategist seeking internship opportunities. Specializing in <strong>AI-driven development, JavaScript/TypeScript, React, Node.js</strong>, and <strong>cloud technologies (Azure)</strong>, I leverage AI tools like GitHub Copilot to enhance development efficiency and code quality. I&apos;ve successfully led multiple university project teams using microservices architecture and modern AI-assisted development practices, while managing products serving 2M+ users.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
