@@ -1,13 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
   "framework": "nextjs",
-  "functions": {
-    "app/api/**/*": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "env": {
     "GEMINI_RPM_LIMIT": "5",
     "GEMINI_RPD_LIMIT": "20"
