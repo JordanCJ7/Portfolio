@@ -5,7 +5,7 @@ import { personalChat, type PersonalChatInput } from '@/ai/flows/personal-chat';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
-import { Send, Bot, User, MessageCircle, X, Minimize2, ShieldAlert } from 'lucide-react';
+import { Send, Bot, MessageCircle, X, Minimize2, ShieldAlert } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ChatMessage {
@@ -197,7 +197,7 @@ export default function ChatWidget() {
               <Bot className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-semibold text-base">Janitha's AI Assistant</h3>
+              <h3 className="text-white font-semibold text-base">Janitha&apos;s AI Assistant</h3>
               <p className="text-blue-100 text-sm">Ask me anything about Janitha!</p>
             </div>
           </div>
