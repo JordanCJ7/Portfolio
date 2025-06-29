@@ -138,7 +138,7 @@ export default function SkillsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-sm font-medium text-foreground">
