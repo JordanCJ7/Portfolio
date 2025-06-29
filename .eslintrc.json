@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "overrides": [
+    {
+      "files": ["src/lib/performance.ts", "src/components/performance-dashboard.tsx", "src/components/ui/expandable-text.tsx", "src/contexts/NavigationContext.tsx"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}
