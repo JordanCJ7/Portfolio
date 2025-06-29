@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import AnimatedElement from '@/components/animated-element';
+import ChatWidget from '@/components/chat-widget';
 import { 
   Code2, 
   Users, 
@@ -159,6 +160,9 @@ export default function SkillsPage() {
             </Card>
           </AnimatedElement>
         ))}
+      </div>
+      <div className="mt-8">
+        <ChatWidget />
       </div>
     </SectionWrapper>
   );
