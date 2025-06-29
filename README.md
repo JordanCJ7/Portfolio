@@ -148,6 +148,24 @@ Follow these steps to get the project up and running on your local machine:
 
 You should now have the Janitha Gamage Portfolio application running locally.
 
+## 📚 Documentation
+
+Comprehensive documentation is available in the [`docs/`](./docs/) folder:
+
+### 🤖 **AI Setup & Configuration**
+- **[AI Cost Guide](./docs/ai-setup/AI_COST_GUIDE.md)** - Zero-cost AI usage with Google Gemini free tier
+- **[Free Tier Setup](./docs/ai-setup/FREE_TIER_SETUP.md)** - Step-by-step API key configuration
+- **[Ollama Analysis](./docs/ai-setup/OLLAMA_ANALYSIS.md)** - Local development with Ollama vs cloud deployment
+
+### 🎯 **Project Documentation**
+- **[Knowledge Base Enhancement](./docs/KNOWLEDGE_BASE_ENHANCEMENT.md)** - AI assistant capabilities and improvements
+- **[Project Blueprint](./docs/blueprint.md)** - Original design guidelines and specifications
+
+### 📋 **Quick Start Links**
+- New to the AI features? Start with [Free Tier Setup](./docs/ai-setup/FREE_TIER_SETUP.md)
+- Want to understand costs? Read the [AI Cost Guide](./docs/ai-setup/AI_COST_GUIDE.md)
+- Developing locally? Check [Ollama Analysis](./docs/ai-setup/OLLAMA_ANALYSIS.md)
+
 ## Building for Production
 
 To build the application for production:
