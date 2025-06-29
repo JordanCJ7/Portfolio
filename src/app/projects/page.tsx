@@ -74,11 +74,68 @@ const sampleProjects: Project[] = [
     }
   },
   {
+    id: '3',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
+    id: '3',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
+    id: '3',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
     id: '4',
     title: 'Salon Pabalu: Web-Based Salon Management System',
     description: 'Salon Pabalu, a renowned beauty and wellness center in Mahiyanganaya, partnered with us to develop an advanced, web-based Salon Management System to streamline operations and enhance customer experiences. Built using the MERN stack, the system automates essential processes including user account management, appointment scheduling, inventory tracking, service management, employee management, and customer relationship management.',
     longDescription: 'Key Features:\n- User Account Management: Secure user profiles with role-based access control.\n- Appointment & Scheduling: Online booking with automated reminders and conflict resolution.\n- Service & Product Management: Easy tracking of available services and products, including pricing and inventory.\n- Employee Management: Streamlined leave requests, shift management, and performance tracking.\n- Customer Feedback: Integrated feedback system to improve service quality.\n- Gift Voucher Management: Creation and tracking of customized gift vouchers.\n\nTech Stack:\n- Frontend: React.js\n- Backend: Node.js, Express.js, MongoDB\n- Authentication: Role-based access control',
-    imageUrl: 'https://picsum.photos/seed/salon/600/338',
+    imageUrl: '/projects/Salon Pabalu.jpeg',
     tags: ['Team Leadership', 'Web Development', 'Project Management', 'Collaboration & Productivity', 'Version Control', 'Requirements Engineering'],
     categories: ['Web Development', 'Product Management'],
     // projectUrl: '#',
