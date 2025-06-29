@@ -43,7 +43,7 @@ const sampleProjects: Project[] = [
     imageUrl: 'https://picsum.photos/seed/foodiefly/600/338',
     tags: ['Web Development', 'JavaScript', 'Project Management', 'Microservices', 'Docker', 'Collaboration & Productivity', 'Version Control', 'MERN Stack'],
     categories: ['Web Development', 'System Design', 'Product Management'],
-    projectUrl: '#',
+    // projectUrl: '#',
     repoUrl: 'https://github.com/JordanCJ7/FoodieFly',
     year: 2025,
     client: 'SLIIT',
