@@ -154,7 +154,7 @@ const sampleProjects: Project[] = [
     title: 'GIF Generator – Python Desktop App',
     description: 'A sleek, interactive desktop application built using Python (Tkinter + Pillow) that allows users to generate animated GIFs from a collection of images. This no-dependency, beginner-friendly tool includes real-time thumbnail previews, customizable settings, and a polished, scrollable UI—perfect for both casual users and creative professionals.',
     longDescription: 'Key Features:\n- Scrollable image preview grid with hover effects and remove buttons\n- Real-time thumbnail previews with queue numbering\n- Intuitive layout with fixed column structure for consistency\n- Fully customizable frame duration and output resolution\n- Clean, modern GUI styling with color themes and padding\n- Smooth incremental image selection with live updates\n\nMain Modules:\n- Select multiple images from file explorer\n- Live thumbnails with scrollable grid (150x150 preview)\n- Custom frame duration (in ms)\n- Adjustable GIF resolution (width x height)\n- Remove image from preview queue with a single click\n- Save GIF to custom location\n- Image order labels for frame sequencing\n- Input validation and error handling for all fields\n\nTech Stack:\n- Language: Python 3.x\n- GUI: Tkinter (native Python library)\n- Image Processing: Pillow\n- No external dependencies or frameworks required',
-    imageUrl: '/projects/GIFGenerator.png',
+    imageUrl: 'https://picsum.photos/seed/gif/600/338',
     tags: ['Tkinter', 'Pillow', 'Desktop App', 'Image Processing', 'UI/UX', 'No Dependencies'],
     categories: ['Desktop App', 'UI/UX', 'Image Processing'],
     projectUrl: '',
