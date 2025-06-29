@@ -74,64 +74,64 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '3',
-    title: 'NobleTrust Insurance Website',
-    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
-    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
-    imageUrl: '/projects/NobleTrust.png',
-    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
-    categories: ['Web Development', 'UX Strategy'],
-    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
-    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
-    year: 2025,
-    client: 'NobleTrust Insurance',
-    role: 'Frontend Developer & UX Strategist',
-    metrics: {
-      conversion: '45% increase in inquiry conversions',
-      accessibility: '100% WCAG compliance achieved',
-      performance: '95+ Lighthouse performance score'
-    }
-  },
-  {
-    id: '3',
-    title: 'NobleTrust Insurance Website',
-    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
-    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
-    imageUrl: '/projects/NobleTrust.png',
-    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
-    categories: ['Web Development', 'UX Strategy'],
-    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
-    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
-    year: 2025,
-    client: 'NobleTrust Insurance',
-    role: 'Frontend Developer & UX Strategist',
-    metrics: {
-      conversion: '45% increase in inquiry conversions',
-      accessibility: '100% WCAG compliance achieved',
-      performance: '95+ Lighthouse performance score'
-    }
-  },
-  {
-    id: '3',
-    title: 'NobleTrust Insurance Website',
-    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
-    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
-    imageUrl: '/projects/NobleTrust.png',
-    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
-    categories: ['Web Development', 'UX Strategy'],
-    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
-    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
-    year: 2025,
-    client: 'NobleTrust Insurance',
-    role: 'Frontend Developer & UX Strategist',
-    metrics: {
-      conversion: '45% increase in inquiry conversions',
-      accessibility: '100% WCAG compliance achieved',
-      performance: '95+ Lighthouse performance score'
-    }
-  },
-  {
     id: '4',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
+    id: '5',
+    title: 'NobleTrust Insurance Website',
+    description: 'Developed user-centric insurance website with focus on conversion optimization and accessibility. Conducted A/B testing on key user flows and improved customer inquiry rates through strategic UX improvements.',
+    longDescription: 'Key Features:\n- Conversion Optimization: Implemented A/B testing to refine user flows.\n- Accessibility: Achieved full WCAG compliance for inclusivity.\n- Performance: Optimized for fast load times and high Lighthouse scores.\n\nTech Stack:\n- Frontend: HTML5, CSS3, Sass\n- Backend: JavaScript',
+    imageUrl: '/projects/NobleTrust.png',
+    tags: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'A/B Testing', 'Conversion Optimization'],
+    categories: ['Web Development', 'UX Strategy'],
+    projectUrl: 'https://jordancj7.github.io/NobleTrust/',
+    repoUrl: 'https://github.com/JordanCJ7/NobleTrust',
+    year: 2025,
+    client: 'NobleTrust Insurance',
+    role: 'Frontend Developer & UX Strategist',
+    metrics: {
+      conversion: '45% increase in inquiry conversions',
+      accessibility: '100% WCAG compliance achieved',
+      performance: '95+ Lighthouse performance score'
+    }
+  },
+  {
+    id: '6',
+    title: 'EarthScope - React.js, JavaScript',
+    description: 'EarthScope is a modern web application built with React.js, Material UI, and custom CSS, designed to help users explore countries worldwide. Leveraging the REST Countries API, it provides detailed information for each country, including flags, population, region, capital, languages, and more. Users can browse all countries, search by name, and filter by region or language. The app features a responsive design for seamless use on any device and includes robust testing with Jest and React Testing Library.',
+    longDescription: 'Key Features:\n- Browse and search countries by name.\n- Filter countries by region or language.\n- View detailed country information: flag, population, region, capital, languages, and more.\n- Responsive design for all devices.\n- REST Countries API integration.\n- Modern UI with Material UI and custom CSS.\n- Robust testing with Jest and React Testing Library.\n\nTech Stack:\n- Frontend: React.js, Material UI\n- Styling: Custom CSS\n- Language: JavaScript\n- API: REST Countries API\n- Testing: Jest, React Testing Library',
+    imageUrl: 'https://picsum.photos/seed/earthscope/600/338',
+    tags: ['React.js', 'JavaScript', 'Material-UI', 'Jest', 'REST Countries API', 'Responsive Design'],
+    categories: ['Web Development'],
+    projectUrl: 'https://earth-scope.vercel.app/',
+    repoUrl: 'https://github.com/JordanCJ7/EarthScope',
+    year: 2025,
+    client: 'SLIIT Academic Project',
+    role: 'Full Stack Developer',
+    metrics: {
+      performance: 'Responsive design for all devices',
+      api: 'REST Countries API integration',
+      testing: 'Tested with Jest and React Testing Library'
+    }
+  },
+  {
+    id: '7',
     title: 'Salon Pabalu: Web-Based Salon Management System',
     description: 'Salon Pabalu, a renowned beauty and wellness center in Mahiyanganaya, partnered with us to develop an advanced, web-based Salon Management System to streamline operations and enhance customer experiences. Built using the MERN stack, the system automates essential processes including user account management, appointment scheduling, inventory tracking, service management, employee management, and customer relationship management.',
     longDescription: 'Key Features:\n- User Account Management: Secure user profiles with role-based access control.\n- Appointment & Scheduling: Online booking with automated reminders and conflict resolution.\n- Service & Product Management: Easy tracking of available services and products, including pricing and inventory.\n- Employee Management: Streamlined leave requests, shift management, and performance tracking.\n- Customer Feedback: Integrated feedback system to improve service quality.\n- Gift Voucher Management: Creation and tracking of customized gift vouchers.\n\nTech Stack:\n- Frontend: React.js\n- Backend: Node.js, Express.js, MongoDB\n- Authentication: Role-based access control',
@@ -149,7 +149,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '5',
+    id: '8',
     title: 'E-Commerce Product Analytics Dashboard',
     description: 'Built a comprehensive analytics dashboard to track user behavior and product performance. Led user research sessions, defined KPIs, and implemented data-driven features that increased conversion rates and improved inventory management decisions.',
     longDescription: 'Key Features:\n- Data Visualization: Interactive charts and graphs for actionable insights.\n- KPI Tracking: Real-time monitoring of key business metrics.\n- User Research: Incorporated feedback to drive feature development.\n\nTech Stack:\n- Frontend: React\n- Data Visualization: D3.js',
@@ -168,7 +168,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '6',
+    id: '9',
     title: 'Mobile App User Onboarding Optimization',
     description: 'Redesigned user onboarding flow for a fintech mobile app through extensive user research and A/B testing. Collaborated with design and engineering teams to implement data-driven improvements that significantly reduced user drop-off rates.',
     longDescription: 'Key Features:\n- User Research: Conducted interviews and usability tests to identify pain points.\n- A/B Testing: Validated onboarding improvements with real users.\n- Cross-functional Collaboration: Worked closely with design and engineering for seamless delivery.\n\nTech Stack:\n- Product Strategy\n- Mobile UX',
@@ -187,7 +187,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '7',
+    id: '10',
     title: 'Advanced Tic Tac Toe AI Game',
     description: 'Developed a sophisticated Tic Tac Toe game with advanced AI logic using C# and .NET, enhanced by AI-assisted development tools. Utilized GitHub Copilot for efficient algorithm implementation and code optimization, creating multiple difficulty levels and strategic AI decision-making algorithms.',
     longDescription: 'Key Features:\n- Advanced AI: Multiple difficulty levels and strategic gameplay.\n- Efficient Algorithms: Optimized for performance and challenge.\n- AI-Assisted Development: Leveraged GitHub Copilot for rapid prototyping.\n\nTech Stack:\n- Backend: C#, .NET',
@@ -206,7 +206,7 @@ const sampleProjects: Project[] = [
     }
   },
   {
-    id: '8',
+    id: '11',
     title: 'Kotlin Todo Mobile App',
     description: 'Built a feature-rich todo application using Kotlin to demonstrate mobile development fundamentals. Includes task management, local storage, intuitive UI/UX design, and efficient data handling showcasing mobile development capabilities.',
     longDescription: 'Key Features:\n- Task Management: Add, edit, and delete tasks with ease.\n- Local Storage: Persistent data across sessions.\n- Mobile UI/UX: Clean and intuitive design for productivity.\n\nTech Stack:\n- Mobile: Kotlin',
