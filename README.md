@@ -354,4 +354,3 @@ This portfolio represents the culmination of modern web development practices, A
 
 **Built with ❤️ by Janitha Gamage** - A passionate developer ready to contribute to innovative projects and learn from experienced professionals.
 
-1
