@@ -91,6 +91,48 @@ export default function AdminMessagesPage() {
     }
   };
 
+  // Toggle read status handler
+  const handleRead = async (msg: any) => {
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch(`/api/contact?token=${encodeURIComponent(token)}&id=${encodeURIComponent(msg._id)}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ read: !msg.read }),
+      });
+      if (!res.ok) throw new Error("Failed to update read status");
+      setMessages(msgs =>
+        msgs.map(m => m._id === msg._id ? { ...m, read: !msg.read } : m)
+      );
+    } catch (err: any) {
+      setError(err.message || "Error updating read status");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Toggle star status handler
+  const handleStar = async (msg: any) => {
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch(`/api/contact?token=${encodeURIComponent(token)}&id=${encodeURIComponent(msg._id)}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ starred: !msg.starred }),
+      });
+      if (!res.ok) throw new Error("Failed to update starred status");
+      setMessages(msgs =>
+        msgs.map(m => m._id === msg._id ? { ...m, starred: !msg.starred } : m)
+      );
+    } catch (err: any) {
+      setError(err.message || "Error updating starred status");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Analytics calculation
   const analytics = useMemo(() => {
     const now = new Date();
