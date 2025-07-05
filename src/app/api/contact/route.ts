@@ -81,3 +81,40 @@ export async function DELETE(req: Request) {
     return NextResponse.json({ error: 'Failed to delete message', details: error?.message || error }, { status: 500 });
   }
 }
+
+export async function PATCH(req: Request) {
+  // For admin dashboard: require a secret token in query string
+  const { searchParams } = new URL(req.url);
+  const token = searchParams.get('token');
+  const id = searchParams.get('id');
+  if (token !== process.env.ADMIN_SECRET) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+  if (!id) {
+    return NextResponse.json({ error: 'Missing message id' }, { status: 400 });
+  }
+  try {
+    const body = await req.json();
+    const update: any = {};
+    if ('starred' in body) update.starred = !!body.starred;
+    if ('read' in body) update.read = !!body.read;
+    if (Object.keys(update).length === 0) {
+      return NextResponse.json({ error: 'No valid fields to update' }, { status: 400 });
+    }
+    const client: MongoClient = await typedClientPromise;
+    const db: Db = client.db();
+    const { ObjectId } = await import('mongodb');
+    const result = await db.collection('messages').updateOne(
+      { _id: new ObjectId(id) },
+      { $set: update }
+    );
+    if (result.matchedCount === 1) {
+      return NextResponse.json({ success: true });
+    } else {
+      return NextResponse.json({ error: 'Message not found' }, { status: 404 });
+    }
+  } catch (error: any) {
+    console.error('Contact API Patch Error:', error);
+    return NextResponse.json({ error: 'Failed to update message', details: error?.message || error }, { status: 500 });
+  }
+}
