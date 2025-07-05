@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { SmartLink, useNavigation } from '@/contexts/NavigationContext';
 import { throttle } from '@/lib/performance';
+import { useRouter } from 'next/navigation';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home, prefetch: 'immediate' as const },
@@ -25,6 +26,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
 
   // Enhanced scroll handler with throttling
   const handleScroll = useCallback(() => {
@@ -194,6 +196,33 @@ export default function Header() {
             Janitha Gamage
           </span>
         </SmartLink>
+        {/* Visible round admin portal button next to name, separate from name link, with icon and default header theme */}
+        <button
+          type="button"
+          aria-label="Admin Portal"
+          onClick={e => {
+            e.stopPropagation();
+            router.push('/admin/messages');
+          }}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 32,
+            height: 32,
+            marginLeft: 8,
+            borderRadius: '50%',
+            background: 'var(--background)',
+            boxShadow: '0 2px 8px 0 rgba(0,0,0,0.06)',
+            border: '1px solid var(--border)',
+            cursor: 'pointer',
+            transition: 'box-shadow 0.2s, transform 0.2s, background 0.2s',
+          }}
+          className="admin-portal-trigger hover:shadow-xl hover:bg-primary/10 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary"
+        >
+          {/* Use a lock icon for admin */}
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </button>
 
         {/* Enhanced Desktop Navigation */}
         <nav className="hidden sm:flex items-center space-x-3 md:space-x-4">
