@@ -4,7 +4,6 @@ import { useForm, type SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -15,11 +14,6 @@ import { useToast } from '@/hooks/use-toast';
 import { Send, Loader2, Mail, MapPin, AlertCircle } from 'lucide-react';
 import AnimatedElement from '@/components/animated-element';
 import ChatWidget from '@/components/chat-widget';
-
-// EmailJS configuration
-const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
-const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
-const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
 
 // Rate limiting for free tier (200 emails/month)
 const RATE_LIMIT_KEY = 'emailjs_usage';
@@ -106,7 +100,7 @@ export default function ContactPage() {
 
   const onSubmit: SubmitHandler<ContactFormValues> = async (data) => {
     setEmailStatus('sending');
-    
+
     // Check rate limits
     const rateCheck = checkRateLimit();
     if (!rateCheck.canSend) {
@@ -119,39 +113,13 @@ export default function ContactPage() {
       return;
     }
 
-    // Check if EmailJS is configured
-    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
-      toast({
-        title: "Configuration Error",
-        description: "Email service is not properly configured. Please contact directly via the provided email address.",
-        variant: "destructive",
-      });
-      setEmailStatus('error');
-      return;
-    }
-
     try {
-      // Initialize EmailJS
-      emailjs.init(EMAILJS_PUBLIC_KEY);
-      
-      // Prepare template parameters
-      const templateParams = {
-        from_name: data.name,
-        from_email: data.email,
-        subject: data.subject,
-        message: data.message,
-        to_name: 'Janitha Gamage',
-        reply_to: data.email,
-      };
-
-      // Send email
-      const result = await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams
-      );
-
-      if (result.status === 200) {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
         toast({
           title: "Message Sent Successfully!",
           description: `Thank you ${data.name}! I'll get back to you soon. (${rateCheck.monthlyCount}/${rateCheck.monthlyLimit} monthly limit used)`,
@@ -159,10 +127,10 @@ export default function ContactPage() {
         form.reset();
         setEmailStatus('success');
       } else {
-        throw new Error('Failed to send email');
+        throw new Error('Failed to save message');
       }
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Contact API Error:', error);
       toast({
         title: "Failed to Send Message",
         description: "There was an error sending your message. Please try contacting me directly via email.",
@@ -192,14 +160,6 @@ export default function ContactPage() {
               <CardDescription>
                 Looking for technical development, product strategy, or both? Let me know how I can help bring your vision to life.
               </CardDescription>
-              {!EMAILJS_SERVICE_ID && (
-                <div className="flex items-center gap-2 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-md">
-                  <AlertCircle className="h-4 w-4 text-yellow-600 dark:text-yellow-400" />
-                  <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                    Email service not configured. Please contact directly via the email below.
-                  </p>
-                </div>
-              )}
             </CardHeader>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
