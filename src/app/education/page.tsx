@@ -234,11 +234,11 @@ export default function EducationPage() {
             <CardContent>
               <div className="space-y-6">
                 {/* University Education */}
-                <div className="border-l-4 border-primary/30 pl-6 pb-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex gap-4 items-center">
-                      <div className="flex-shrink-0">
-                        <div className="w-24 h-24 rounded-lg overflow-hidden border-2 border-primary/20 p-0 relative">
+                <div className="border-l-4 border-primary/30 pl-4 pb-4 md:pl-6">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4 items-start w-full md:w-auto">
+                      <div className="flex-shrink-0 w-full sm:w-auto">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-primary/20 p-0 relative mx-auto sm:mx-0">
                           <Image
                             src="/logos/sliit-logo.png"
                             alt="SLIIT Logo"
@@ -257,20 +257,20 @@ export default function EducationPage() {
                           </div>
                         </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base sm:text-lg font-semibold text-foreground">
                           BSc (Hons) in Information Technology – Software Engineering
                         </h3>
-                        <p className="text-muted-foreground font-medium">
+                        <p className="text-muted-foreground font-medium text-sm sm:text-base">
                           Sri Lanka Institute of Information Technology (SLIIT)
                         </p>
-                        <p className="text-sm text-muted-foreground mt-1">
+                        <p className="text-xs sm:text-sm text-muted-foreground mt-1">
                           Specializing in AI-driven development, full-stack technologies, and product management methodologies
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-2 items-end text-right">
-                      <Badge variant="outline" className="flex items-center gap-1 w-fit">
+                    <div className="flex flex-row md:flex-col gap-2 items-end md:items-end text-right w-full md:w-auto justify-end md:justify-end mt-2 md:mt-0">
+                      <Badge variant="outline" className="flex items-center gap-1 w-fit text-xs sm:text-sm">
                         <Calendar className="h-3 w-3" />
                         Current
                       </Badge>
@@ -282,11 +282,11 @@ export default function EducationPage() {
                 </div>
 
                 {/* High School Education */}
-                <div className="border-l-4 border-accent/30 pl-6 pb-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex gap-4 items-center">
-                      <div className="flex-shrink-0">
-                        <div className="w-24 h-24 rounded-lg overflow-hidden border-2 border-accent/20 p-0 relative">
+                <div className="border-l-4 border-accent/30 pl-4 pb-4 md:pl-6">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4 items-start w-full md:w-auto">
+                      <div className="flex-shrink-0 w-full sm:w-auto">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-accent/20 p-0 relative mx-auto sm:mx-0">
                           <Image
                             src="/logos/richmond-college-logo.png"
                             alt="Richmond College Logo"
@@ -304,20 +304,20 @@ export default function EducationPage() {
                           </div>
                         </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base sm:text-lg font-semibold text-foreground">
                           Richmond College, Galle
                         </h3>
-                        <p className="text-muted-foreground font-medium">
+                        <p className="text-muted-foreground font-medium text-sm sm:text-base">
                           Advanced Level Education - Biological Science Stream
                         </p>
-                        <p className="text-sm text-muted-foreground mt-1">
+                        <p className="text-xs sm:text-sm text-muted-foreground mt-1">
                           Focus on Biological Science, Physics, and Chemistry
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-2 items-end text-right">
-                      <Badge variant="outline" className="flex items-center gap-1 w-fit">
+                    <div className="flex flex-row md:flex-col gap-2 items-end md:items-end text-right w-full md:w-auto justify-end md:justify-end mt-2 md:mt-0">
+                      <Badge variant="outline" className="flex items-center gap-1 w-fit text-xs sm:text-sm">
                         <Calendar className="h-3 w-3" />
                         Completed
                       </Badge>
