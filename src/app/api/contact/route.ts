@@ -6,6 +6,8 @@ import type { MongoClient, Db } from 'mongodb';
 const typedClientPromise: Promise<MongoClient> = clientPromise;
 
 export async function POST(req: Request) {
+  // Test log for env variables
+  console.log('API route hit', process.env.MONGODB_URI, process.env.ADMIN_SECRET);
   try {
     const body = await req.json();
     const { name, email, subject, message } = body;
@@ -23,9 +25,14 @@ export async function POST(req: Request) {
     });
     return NextResponse.json({ success: true, id: result.insertedId });
   } catch (error: any) {
-    // Enhanced error logging for debugging
-    console.error('Contact API Error:', error);
-    return NextResponse.json({ error: 'Failed to save message', details: error?.message || error }, { status: 500 });
+    let errorString = '';
+    try {
+      errorString = JSON.stringify(error, Object.getOwnPropertyNames(error));
+    } catch (e) {
+      errorString = String(error);
+    }
+    console.error('Contact API Error:', errorString);
+    return NextResponse.json({ error: 'Failed to save message', details: errorString }, { status: 500 });
   }
 }
 
