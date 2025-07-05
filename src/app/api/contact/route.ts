@@ -22,8 +22,10 @@ export async function POST(req: Request) {
       createdAt: new Date(),
     });
     return NextResponse.json({ success: true, id: result.insertedId });
-  } catch (error) {
-    return NextResponse.json({ error: 'Failed to save message' }, { status: 500 });
+  } catch (error: any) {
+    // Enhanced error logging for debugging
+    console.error('Contact API Error:', error);
+    return NextResponse.json({ error: 'Failed to save message', details: error?.message || error }, { status: 500 });
   }
 }
 
@@ -39,7 +41,9 @@ export async function GET(req: Request) {
     const db: Db = client.db();
     const messages = await db.collection('messages').find({}).sort({ createdAt: -1 }).toArray();
     return NextResponse.json({ messages });
-  } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch messages' }, { status: 500 });
+  } catch (error: any) {
+    // Enhanced error logging for debugging
+    console.error('Contact API Error:', error);
+    return NextResponse.json({ error: 'Failed to fetch messages', details: error?.message || error }, { status: 500 });
   }
 }
