@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -18,8 +18,6 @@ export default function AdminMessagesPage() {
   const [filter, setFilter] = useState({ date: '' });
   const [sortOrder, setSortOrder] = useState<'desc' | 'asc'>('desc');
   const [selectedMessage, setSelectedMessage] = useState<any | null>(null);
-  const [readStatus, setReadStatus] = useState<{ [id: string]: boolean }>({});
-  const [starred, setStarred] = useState<{ [id: string]: boolean }>({});
   const [tab, setTab] = useState<'all' | 'starred'>('all');
 
   const fetchMessages = async () => {
@@ -43,7 +41,7 @@ export default function AdminMessagesPage() {
   const filteredMessages = useMemo(() => {
     let filtered = messages;
     if (tab === 'starred') {
-      filtered = filtered.filter(msg => starred[msg._id]);
+      filtered = filtered.filter(msg => msg.starred);
     }
     if (filter.date) {
       const now = new Date();
@@ -74,7 +72,7 @@ export default function AdminMessagesPage() {
       const dateB = new Date(b.createdAt).getTime();
       return sortOrder === 'desc' ? dateB - dateA : dateA - dateB;
     });
-  }, [messages, filter, sortOrder, tab, starred]);
+  }, [messages, filter, sortOrder, tab]);
 
   const deleteMessage = async (id: string) => {
     if (!window.confirm('Are you sure you want to delete this message?')) return;
@@ -157,7 +155,29 @@ export default function AdminMessagesPage() {
                   URL.revokeObjectURL(url);
                 }}>Export CSV</Button>
               </div>
-              <Tabs value={tab} onValueChange={setTab} className="mb-4">
+              {/* Filter and Sort UI */}
+              <div className="flex flex-wrap gap-2 mb-4 items-center">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="ml-0"
+                  onClick={() => setSortOrder(o => (o === 'desc' ? 'asc' : 'desc'))}
+                >
+                  Sort by Date: {sortOrder === 'desc' ? 'Newest' : 'Oldest'}
+                </Button>
+                <select
+                  className="border rounded px-2 py-1 text-sm bg-secondary text-secondary-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  value={filter.date}
+                  onChange={e => setFilter({ date: e.target.value })}
+                >
+                  <option value="">All Dates</option>
+                  <option value="today">Today</option>
+                  <option value="week">This Week</option>
+                  <option value="month">This Month</option>
+                  <option value="year">This Year</option>
+                </select>
+              </div>
+              <Tabs value={tab} onValueChange={v => setTab(v as 'all' | 'starred')} className="mb-4">
                 <TabsList>
                   <TabsTrigger value="all">All Messages</TabsTrigger>
                   <TabsTrigger value="starred">Starred</TabsTrigger>
@@ -166,7 +186,6 @@ export default function AdminMessagesPage() {
               {filteredMessages.length === 0 && <div>No messages found.</div>}
               {filteredMessages.map((msg, idx) => (
                 <div key={msg._id || idx} className="border rounded p-4 mb-2 bg-muted relative cursor-pointer group" onClick={e => {
-                  // Only open modal if not clicking star or read
                   if ((e.target as HTMLElement).closest('.star-btn, .read-btn')) return;
                   setSelectedMessage(msg);
                 }}>
@@ -178,19 +197,19 @@ export default function AdminMessagesPage() {
                   <div className="flex items-center gap-2 mt-3">
                     <button
                       type="button"
-                      className={`star-btn text-xl transition-colors ${starred[msg._id] ? 'text-yellow-500' : 'text-gray-400'} hover:text-yellow-500 focus:outline-none`}
+                      className={`star-btn text-xl transition-colors ${msg.starred ? 'text-yellow-500' : 'text-gray-400'} hover:text-yellow-500 focus:outline-none`}
                       aria-label="Star message"
-                      onClick={e => { e.stopPropagation(); setStarred(s => ({ ...s, [msg._id]: !s[msg._id] })); }}
+                      onClick={e => { e.stopPropagation(); handleStar(msg); }}
                     >
                       ★
                     </button>
                     <button
                       type="button"
-                      className={`read-btn text-xs px-2 py-1 rounded ${readStatus[msg._id] ? 'bg-green-100 text-green-700' : 'bg-gray-200 text-gray-500'} focus:outline-none`}
+                      className={`read-btn text-xs px-2 py-1 rounded ${msg.read ? 'bg-green-100 text-green-700' : 'bg-gray-200 text-gray-500'} focus:outline-none`}
                       aria-label="Mark as read"
-                      onClick={e => { e.stopPropagation(); setReadStatus(s => ({ ...s, [msg._id]: !s[msg._id] })); }}
+                      onClick={e => { e.stopPropagation(); handleRead(msg); }}
                     >
-                      {readStatus[msg._id] ? 'Read' : 'Unread'}
+                      {msg.read ? 'Read' : 'Unread'}
                     </button>
                   </div>
                   <Button
