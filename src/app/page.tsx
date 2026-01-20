@@ -77,7 +77,7 @@ export default function HomePage() {
         <AnimatedElement animationClass="animate-fade-in" delay="delay-200" className="relative group">
           <div className="aspect-square rounded-full overflow-hidden shadow-2xl mx-auto max-w-md md:max-w-full border-4 border-primary/30 group-hover:border-primary/70 transition-all duration-300">
             <Image
-              src="/CJ.jpg"
+              src="/CJ.png"
               alt="Janitha Gamage - Profile Picture"
               width={600}
               height={600}
