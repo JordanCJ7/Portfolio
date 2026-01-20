@@ -45,6 +45,13 @@ const nextConfig: NextConfig = {
       crypto: false,
     };
     
+    // Suppress known warnings from dependencies
+    config.ignoreWarnings = [
+      { module: /node_modules\/@opentelemetry\/sdk-node/ },
+      { module: /node_modules\/handlebars/ },
+      /require\.extensions/,
+    ];
+    
     if (dev && !isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
