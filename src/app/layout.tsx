@@ -8,6 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { NavigationProvider } from '@/contexts/NavigationContext';
 import PerformanceDashboard from '@/components/performance-dashboard';
 import LoadingBuffer from '@/components/ui/loading-buffer';
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -88,6 +89,7 @@ export default function RootLayout({
           <LoadingBuffer type="bar" />
           <LoadingBuffer type="overlay" />
         </NavigationProvider>
+        <Analytics />
       </body>
     </html>
   );
